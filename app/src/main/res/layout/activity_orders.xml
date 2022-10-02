@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".mypack.OrdersActivity">
+
+    <!--    <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/tool"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">-->
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/main_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        android:fitsSystemWindows="true" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="@dimen/dp240"
+
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@drawable/stroke2"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/pendingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/rect_1_white"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Pending"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/completedBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Completed"
+                android:textColor="@color/black" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+    <!--</com.google.android.material.appbar.AppBarLayout>
+-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/main_toolbar"
+        android:layout_marginTop="@dimen/dp10"
+        android:background="@drawable/curve_dash">
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp8"
+            android:layout_marginTop="@dimen/sp20"
+            android:layout_marginRight="@dimen/dp8"
+            android:background="#fff"
+            app:tabMode="auto"
+            app:tabTextAppearance="@style/TextAppearance.AppCompat.Small" />
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tab_layout" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

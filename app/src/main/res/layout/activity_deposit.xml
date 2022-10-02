@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".mypack.DepositActivity">
+
+    <include layout="@layout/toolbar_main_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/cvr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp70"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/im1"
+                        android:layout_width="@dimen/dp35"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle1"
+                        android:padding="@dimen/dp6"
+                        android:src="@drawable/upi_ic" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/im1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im1"
+                            android:text="UPI ID"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp20"
+                            android:textStyle="bold" />
+
+
+                        <!--                        <androidx.appcompat.widget.LinearLayoutCompat-->
+                        <!--                            android:layout_width="match_parent"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:orientation="horizontal">-->
+
+                        <!--                            <TextView-->
+                        <!--                                android:id="@+id/tv2"-->
+                        <!--                                android:layout_width="wrap_content"-->
+                        <!--                                android:layout_height="wrap_content"-->
+                        <!--                                android:layout_below="@id/tv1"-->
+                        <!--                                android:layout_gravity="center_vertical"-->
+                        <!--                                android:layout_marginLeft="@dimen/dp10"-->
+                        <!--                                android:layout_toRightOf="@id/im1"-->
+                        <!--                                android:text="9549555510@barodampay"-->
+                        <!--                                android:textSize="@dimen/sp13"-->
+                        <!--                                android:visibility="visible" />-->
+
+                        <!--                            <ImageView-->
+                        <!--                                android:id="@+id/copyBtn1"-->
+                        <!--                                android:layout_width="@dimen/dp24"-->
+                        <!--                                android:layout_height="@dimen/dp24"-->
+                        <!--                                android:layout_alignParentRight="true"-->
+                        <!--                                android:layout_centerVertical="true"-->
+                        <!--                                android:layout_marginLeft="@dimen/dp16"-->
+                        <!--                                android:padding="@dimen/dp4"-->
+                        <!--                                android:src="@drawable/ic_baseline_copy_all_24"-->
+                        <!--                                app:tint="@color/colorPrimary" />-->
+                        <!--                        </androidx.appcompat.widget.LinearLayoutCompat>-->
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="0">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tv2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="@dimen/dp10"
+                                    android:text="9549555510@barodampay"
+                                    android:textSize="@dimen/sp13"
+                                    android:visibility="visible"
+                                    tools:ignore="HardcodedText" />
+
+                                <ImageView
+                                    android:id="@+id/copyBtn1"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </TableRow>
+
+
+                        </TableLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp10"
+                app:cardUseCompatPadding="true">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp100"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingRight="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/im2"
+                        android:layout_width="@dimen/dp35"
+                        android:layout_height="@dimen/dp35"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle1"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/governance_ic"
+                        app:tint="@color/colorPrimary" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/copyBtn2"
+                        android:layout_toRightOf="@id/im2"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im1"
+                            android:text="Bank Transfer"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp20"
+                            android:textStyle="bold" />
+
+                        <TableLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:shrinkColumns="*"
+                            android:stretchColumns="0">
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/tv4"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="@dimen/dp10"
+                                    android:layout_weight="1"
+                                    android:padding="@dimen/dp2"
+                                    android:text="Sellpay OPC private limited"
+                                    android:textSize="@dimen/sp13"
+                                    android:visibility="visible"
+                                    tools:ignore="HardcodedText" />
+
+                                <ImageView
+                                    android:id="@+id/copyBtn3"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/tveruyu"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginStart="@dimen/dp10"
+                                    android:padding="@dimen/dp2"
+                                    android:text="Acc: 27960200000484"
+                                    android:textSize="@dimen/sp13"
+                                    android:visibility="visible" />
+
+                                <ImageView
+                                    android:id="@+id/copyBtn"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_marginStart="@dimen/dp16"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/regreg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tv1"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dp10"
+                                    android:layout_toRightOf="@id/im1"
+                                    android:padding="@dimen/dp2"
+                                    android:text="IFSC: BARBKOOKAS"
+                                    android:textSize="@dimen/sp13"
+                                    android:visibility="visible" />
+
+                                <ImageView
+                                    android:id="@+id/egfreg"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </TableRow>
+
+
+                        </TableLayout>
+
+
+                        <!--  <TextView
+                            android:id="@+id/tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im1"
+                            android:padding="@dimen/dp2"
+                            android:text="Acc: 27960200000484"
+                            android:textSize="@dimen/sp13"
+                            android:visibility="visible" />-->
+
+                        <!--                        <TextView-->
+
+                        <!--                            android:layout_width="wrap_content"-->
+                        <!--                            android:layout_height="wrap_content"-->
+                        <!--                            android:layout_below="@id/tv1"-->
+                        <!--                            android:layout_gravity="center_vertical"-->
+                        <!--                            android:layout_marginLeft="@dimen/dp10"-->
+                        <!--                            android:layout_toRightOf="@id/im1"-->
+                        <!--                            android:padding="@dimen/dp2"-->
+                        <!--                            android:textSize="@dimen/sp13"-->
+                        <!--                            android:visibility="visible" />-->
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im1"
+                            android:padding="@dimen/dp2"
+                            android:text="Current Account"
+
+                            android:textSize="@dimen/sp13"
+                            android:visibility="gone" />
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <ImageView
+                        android:id="@+id/copyBtn2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rect2"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/ic_baseline_copy_all_24"
+                        android:visibility="invisible"
+                        app:tint="@color/colorPrimaryDark" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <CheckBox
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvr1"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp40"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:buttonTint="@color/colorPrimary"
+            android:gravity="center_vertical"
+            android:text="Pay Confirmation" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

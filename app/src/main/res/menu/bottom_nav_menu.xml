@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/allpropetie"
+        android:enabled="true"
+        android:fontFamily="serif"
+        android:icon="@drawable/dashboard"
+        android:title="Home"
+        app:showAsAction="always" />
+
+    <item
+        android:enabled="true"
+        android:fontFamily="serif"
+        android:icon="@drawable/dashboard"
+        android:title="Premium Membership"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/myaccount"
+        android:enabled="true"
+        android:fontFamily="serif"
+        android:icon="@drawable/username_24dp"
+        android:title="Trade"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/accnt"
+        android:enabled="true"
+        android:fontFamily="serif"
+        android:icon="@drawable/amount"
+        android:title="Reedem"
+        android:visible="true"
+        app:showAsAction="always" />
+    <!--    <item-->
+    <!--        android:id="@+id/genelogy"-->
+    <!--        android:enabled="true"-->
+    <!--        android:fontFamily="serif"-->
+    <!--        android:visible="false"-->
+    <!--        android:icon="@drawable/sitemap"-->
+    <!--        android:title="Genealogy"-->
+    <!--        app:showAsAction="ifRoom"-->
+    <!--         />-->
+
+    <item
+        android:id="@+id/support"
+        android:enabled="true"
+        android:fontFamily="serif"
+        android:icon="@drawable/ic_transc"
+        android:title="Trans"
+        android:visible="true"
+        app:showAsAction="always" />
+    <!--    <item-->
+    <!--    android:id="@+id/Chngepwd"-->
+    <!--    android:enabled="true"-->
+    <!--    android:fontFamily="serif"-->
+    <!--    android:icon="@drawable/password_24dp"-->
+    <!--    android:title="Change Password"-->
+    <!--        app:showAsAction="ifRoom"/>-->
+
+
+</menu>

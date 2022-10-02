@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <!-- we define border color and thick -->
+    <stroke
+        android:width="0dp"
+        android:color="#ababab"
+        android:text="hiiii" />
+
+    <corners
+        android:bottomLeftRadius="10dp"
+        android:bottomRightRadius="10dp"
+        android:topLeftRadius="10dp"
+        android:topRightRadius="10dp" />
+
+
+    <gradient
+        android:endColor="#F8F8F8"
+        android:startColor="#F8F8F8">
+
+    </gradient>
+</shape>

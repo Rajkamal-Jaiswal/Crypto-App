@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".mypack.SellActivityMaster">
+
+    <include
+        android:id="@+id/mainTool"
+        layout="@layout/toolbar_main_1" />
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btnNext"
+        android:layout_below="@id/mainTool">
+
+        <include
+            android:id="@+id/cvrLayout"
+            layout="@layout/sell_part1" />
+    </FrameLayout>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp10"
+        android:layout_marginEnd="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp10"
+        android:background="@drawable/btn_ripple2"
+        android:text="Next"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+</RelativeLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/allpropetie"
+        android:icon="@drawable/ic_properir"
+        android:title="Dashbaord"
+        android:visible="true" />
+    <item
+        android:id="@+id/myaccount"
+        android:icon="@drawable/username_24dp"
+        android:title="My Account" />
+
+    <item
+        android:id="@+id/Chngepwd"
+        android:icon="@drawable/password_24dp"
+        android:title="Change Password" />
+    <item
+        android:id="@+id/referfriend"
+        android:icon="@drawable/ic_properir"
+        android:title="My Properties"
+        android:visible="false" />
+
+    <item
+        android:id="@+id/logout"
+        android:icon="@drawable/ic_logout"
+        android:title="Logout" />
+</menu>

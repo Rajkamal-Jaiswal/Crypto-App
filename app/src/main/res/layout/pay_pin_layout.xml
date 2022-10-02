@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@color/cardview_light_background"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleDialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/dp4"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:gravity="center_horizontal"
+            android:padding="@dimen/dp5"
+            android:text="Pay Pin"
+            android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/heading_text_size"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <com.goodiebag.pinview.Pinview
+        android:id="@+id/pinview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusedByDefault="true"
+        app:cursorVisible="false"
+        app:forceKeyboard="true"
+        app:hint="0"
+        app:inputType="number"
+        app:password="false"
+        app:pinBackground="@drawable/rect2"
+        app:pinHeight="@dimen/dp40"
+        app:pinLength="6"
+        app:pinWidth="@dimen/dp40"
+        tools:targetApi="o" />
+</androidx.appcompat.widget.LinearLayoutCompat>

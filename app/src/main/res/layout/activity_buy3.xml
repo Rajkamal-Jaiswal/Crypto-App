@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".buy.Buy2Activity">
+
+    <include layout="@layout/toolbar_main_1" />
+
+
+    <!--    <androidx.core.widget.NestedScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/cvr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnBottoms"
+            android:layout_alignParentTop="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="Pay the Seller"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:alpha=".6"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="Pay the Seller within "
+                        android:textColor="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="15:00"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/sp16" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:text="Rs. 83570.83"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp20" />
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_alignParentRight="true"
+                        android:layout_toRightOf="@id/tv11"
+                        android:background="@drawable/rect2"
+                        android:padding="@dimen/dp4"
+                        android:src="@drawable/ic_baseline_copy_all_24"
+                        app:tint="@color/colorPrimary" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/chatBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/search_bg"
+                    android:paddingLeft="@dimen/dp16"
+                    android:paddingTop="@dimen/dp10"
+                    android:paddingRight="@dimen/dp16"
+                    android:paddingBottom="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:drawableLeft="@drawable/ic_outline_mark_chat_unread_24"
+                        android:drawablePadding="@dimen/dp10"
+                        android:gravity="center_vertical"
+                        android:text="Chat"
+                        android:textColor="@color/colorPrimary" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/c1"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:background="@drawable/circle2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@id/c1"
+                        android:padding="@dimen/dp10"
+                        android:text="Leave the sellpay app, open your selected banking or payment platform with an account name that matches your verified name on sellpay and transfer the funds to the seller's account provided below..."
+                        android:textColor="@color/hint_text_color" />
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_margin="@dimen/dp10"
+                        android:layout_toRightOf="@id/c1">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <RelativeLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="@dimen/dp10"
+                                android:paddingTop="@dimen/dp5"
+                                android:paddingRight="@dimen/dp10"
+                                android:paddingBottom="@dimen/dp5">
+
+                                <View
+                                    android:id="@+id/v1"
+                                    android:layout_width="4dp"
+                                    android:layout_height="@dimen/dp20"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dp10"
+                                    android:background="@color/colorPrimaryDark" />
+
+                                <TextView
+                                    android:id="@+id/tv1Upi"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="start"
+                                    android:layout_toRightOf="@id/v1"
+                                    android:gravity="start|center_vertical"
+                                    android:padding="@dimen/dp10"
+                                    android:text="Paytm" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:layout_marginRight="@dimen/dp5"
+                                android:padding="@dimen/dp10">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="Name"
+                                    android:textColor="@color/hint_text_color" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/dp10"
+                                    android:layout_toLeftOf="@id/copyBtn1"
+                                    android:text="TOPHAN SAHU"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:id="@+id/copyBtn1"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/rect2"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:layout_marginRight="@dimen/dp5"
+                                android:padding="@dimen/dp10">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentLeft="true"
+                                    android:text="UPI ID"
+                                    android:textColor="@color/hint_text_color" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginRight="@dimen/dp10"
+                                    android:layout_toLeftOf="@id/copyBtn2"
+                                    android:text="9118919678@ybl"
+                                    android:textColor="@color/black" />
+
+                                <ImageView
+                                    android:id="@+id/copyBtn2"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/rect2"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </RelativeLayout>
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:id="@+id/c2"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginTop="@dimen/dp16"
+                        android:background="@drawable/circle2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/sp12" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_toRightOf="@id/c2"
+                        android:padding="@dimen/dp10"
+                        android:text="After transfering the funds, click on the 'Transferred, notify seller' button Below..."
+                        android:textColor="@color/hint_text_color" />
+                </RelativeLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/btnBottoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp3"
+                android:layout_weight=".6"
+                android:background="@drawable/btn_ripple3"
+                android:text="Help"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp3"
+                android:layout_weight=".3"
+                android:background="@drawable/btn_ripple2"
+                android:text="Transferred, notify seller"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+    <!--    </androidx.core.widget.NestedScrollView>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#471971</color>
+    <color name="colorPrimaryDark">#f0700f</color>
+    <color name="secondaryColorPrimary">#ffff00</color>
+    <color name="darkTintColorPrimary">#370863</color>
+
+    <color name="cpd_light">#F3A970</color>
+    <color name="lightBg_cpd">#F8DECA</color>
+    <color name="colorAccent">#333</color>
+    <color name="holobalack">#2D333333</color>
+    <color name="btnback">#DAD5D5</color>
+    <color name="heading">#471971</color>
+    <color name="buttoncolor">#FF6600</color>
+    <color name="Textcolor">#9F07DBCD</color>
+    <color name="white">#fff</color>
+    <color name="forgetbtn">#070243</color>
+    <color name="holoblack">#74333333</color>
+    <color name="holoblacks">#BA333333</color>
+    <color name="sell">#FF6600</color>
+    <color name="bsck">#F3F3F3</color>
+    <color name="Paidcolor">#00FF00</color>
+    <color name="green">#36CF36</color>
+    <color name="unPaidcolor">#FF0000</color>
+    <color name="Black">#000</color>
+    <color name="black">#000</color>
+    <color name="texthesding">#C59B47</color>
+    <color name="dashheding">#e5dc03</color>
+    <color name="sucess">#008043</color>
+    <color name="expired">#962F30</color>
+    <color name="hint_text_color">#b3b8bd</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="txt_gray">#95999c</color>
+    <color name="app_grey">#F4F4F6</color>
+
+
+</resources>

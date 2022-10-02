@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".Fragment.NewProfileFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="@dimen/dp15">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:src="@drawable/ic_user"
+            app:tint="@color/white" />
+
+        <TextView
+            android:id="@+id/idTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_toRightOf="@id/image"
+            android:paddingTop="@dimen/dp5"
+            android:text="User Name"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/vpUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idTxt"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp4"
+            android:layout_toRightOf="@id/image"
+            android:text="Verified User"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vpUser"
+            android:layout_marginLeft="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_toRightOf="@id/image"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Email"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp6"
+                    android:src="@drawable/check_green_ic" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="SMS"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp6"
+                    android:src="@drawable/check_green_ic" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="KYC"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_gravity="center_vertical"
+
+                    android:layout_marginLeft="@dimen/dp6"
+                    android:src="@drawable/check_green_ic" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:text="Address"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/sp12" />
+
+                <ImageView
+                    android:layout_width="@dimen/dp10"
+                    android:layout_height="@dimen/dp10"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp6"
+                    android:src="@drawable/check_green_ic" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp45"
+        android:background="@drawable/curve_dash"
+        android:orientation="vertical">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp16">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="Buy"
+                    android:textSize="@dimen/sp24"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="Sellpay"
+                    android:textSize="@dimen/sp24"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="40"
+                    android:textSize="@dimen/sp22"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="50"
+                    android:textSize="@dimen/sp22"
+                    android:textStyle="bold"
+                    android:visibility="visible"
+                    tools:ignore="HardcodedText" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@drawable/rect2" />
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrKycUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/dp10"
+                        android:src="@drawable/ic_update_kyc"
+                        app:tint="@color/darkTintColorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp10"
+                        android:text="KYC Update"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/payu_arrow_right" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/rect2" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrPayMethods"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/dp10"
+                        android:src="@drawable/ic_pay_methods"
+                        app:tint="@color/darkTintColorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp10"
+                        android:text="Payment Methods"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/payu_arrow_right" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/rect2" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrNotifications"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/dp10"
+                        android:src="@drawable/ic_notifications_black_24dp"
+                        app:tint="@color/darkTintColorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp10"
+                        android:text="Notifications"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/payu_arrow_right" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/rect2" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrChangePass"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/dp10"
+                        android:src="@drawable/iic_change_pass"
+                        app:tint="@color/darkTintColorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp10"
+                        android:text="Change Password"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/payu_arrow_right" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/rect2" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrHelpCenter"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/dp10"
+                        android:src="@drawable/ic_headset"
+                        app:tint="@color/darkTintColorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp10"
+                        android:text="Help Center"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/payu_arrow_right" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@drawable/rect2" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrBecomeMerchant"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="24dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_margin="@dimen/dp10"
+                        android:src="@drawable/ic_check_simple"
+                        app:tint="@color/darkTintColorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_weight="1"
+                        android:padding="@dimen/dp10"
+                        android:text="Become a Merchant"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp18" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/payu_arrow_right" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

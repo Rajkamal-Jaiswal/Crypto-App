@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    tools:context=".menus.ui.home.HomeFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/c1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/toolBar"
+                android:layout_margin="@dimen/dp10"
+                app:cardCornerRadius="@dimen/dp6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp175">
+
+                    <androidx.viewpager.widget.ViewPager
+                        android:id="@+id/viewPager"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="@dimen/dp0" />
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/announcementTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/c1"
+                android:drawableStart="@drawable/ic_announcement"
+                android:drawablePadding="@dimen/dp4"
+                android:ellipsize="marquee"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:paddingLeft="@dimen/dp12"
+                android:paddingRight="@dimen/dp12"
+                android:singleLine="true"
+                android:text="@string/testNoti"
+                android:textColor="@color/hint_text_color" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/announcementTv"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/curve_dash">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/mainButtons"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginTop="@dimen/dp16"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_deposit" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:gravity="center"
+                            android:text="Deposit"
+                            android:textSize="@dimen/sp12" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_referral" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:gravity="center"
+
+                            android:text="Referral"
+
+
+                            android:textSize="@dimen/sp12" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+                        android:layout_weight="1"
+
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_tournament" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp3"
+
+                            android:gravity="center"
+                            android:text="Tournament"
+
+                            android:textSize="@dimen/sp12" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_earn" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp3"
+
+                            android:gravity="center"
+                            android:text="Earn"
+
+                            android:textSize="@dimen/sp12" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:gravity="center"
+
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:src="@drawable/ic_more" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="@dimen/dp3"
+                            android:gravity="center"
+
+                            android:text="More"
+                            android:textSize="@dimen/sp12" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/p2pCvr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mainButtons"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="114dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp5"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp6"
+                            android:text="P2P Trading"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Bank Transfer, Digital Wallet Transfer, Mobile payment and more"
+                            android:maxLines="2"
+                            android:padding="@dimen/dp6"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="@dimen/sp10" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:src="@drawable/ic_more" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/dp4"
+                                android:background="@drawable/circle1"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+                        </RelativeLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="114dp"
+                        android:layout_marginLeft="@dimen/dp5"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect2"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp6"
+                            android:text="Credit/Debit Card"
+                            android:textColor="@color/Black"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="Visa, Master Card\n"
+                            android:maxLines="2"
+                            android:padding="@dimen/dp6"
+                            android:textColorHint="@color/hint_text_color"
+                            android:textSize="@dimen/sp10" />
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:src="@drawable/ic_more" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_margin="@dimen/dp4"
+                                android:background="@drawable/circle1"
+                                android:padding="@dimen/dp5"
+                                android:src="@drawable/ic_baseline_arrow_forward_24" />
+                        </RelativeLayout>
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/dataRecordsView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/p2pCvr"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp1"
+                                android:text="BNB/BUSD"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp1"
+                                android:text="-7.25%"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/sp12" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp4"
+                            android:text="258.4"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp1"
+                            android:text="-$258.40"
+                            android:textSize="@dimen/sp11" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp1"
+                                android:text="BNB/BUSD"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp1"
+                                android:text="-7.25%"
+                                android:textColor="@color/colorPrimary"
+
+                                android:textSize="@dimen/sp12" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp4"
+                            android:text="258.4"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp1"
+                            android:text="-$258.40"
+                            android:textSize="@dimen/sp11" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.LinearLayoutCompat
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp1"
+                                android:text="BNB/BUSD"
+                                android:textSize="@dimen/sp12" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:padding="@dimen/dp1"
+                                android:text="-7.25%"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="@dimen/sp12" />
+                        </androidx.appcompat.widget.LinearLayoutCompat>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp4"
+                            android:text="258.4"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="@dimen/sp18"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:padding="@dimen/dp1"
+                            android:text="-$258.40"
+                            android:textSize="@dimen/sp11" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dataRecordsView"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:paddingTop="@dimen/dp6"
+                        android:paddingBottom="@dimen/dp6">
+
+                        <TextView
+                            android:id="@+id/hotTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/sp10"
+                            android:background="@drawable/rect2"
+                            android:padding="@dimen/dp4"
+                            android:text="Hot"
+                            android:textSize="@dimen/sp13" />
+
+                        <TextView
+                            android:id="@+id/gainersTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/rect_normal"
+                            android:padding="@dimen/dp4"
+                            android:text="Gainers"
+                            android:textSize="@dimen/sp13" />
+
+                        <TextView
+                            android:id="@+id/losersTv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/rect_normal"
+                            android:padding="@dimen/dp4"
+                            android:text="Losers"
+                            android:textSize="@dimen/sp13" />
+
+                        <TextView
+                            android:id="@+id/vol24Tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/rect_normal"
+                            android:padding="@dimen/dp4"
+                            android:text="24h Vol"
+                            android:textSize="@dimen/sp13" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/recycler1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp8"
+                        android:visibility="visible"
+                        tools:itemCount="20"
+                        tools:listitem="@layout/item_dash1" />
+
+                    <ProgressBar
+                        android:id="@+id/progress1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_margin="@dimen/dp16"
+                        android:visibility="gone" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+        </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

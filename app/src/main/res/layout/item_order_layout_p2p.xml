@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_margin="1dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/circulerImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:alpha=".6"
+            android:text="Sell"
+            android:textColor="@color/sell"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/circulerImage"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/circulerImage"
+            android:ellipsize="marquee"
+            android:gravity="center|left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="10dp"
+            android:paddingLeft="@dimen/dp4"
+            android:text="USDT"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/viewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/ic_baseline_keyboard_arrow_right_24"
+            android:drawablePadding="@dimen/dp5"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:text="Cancelled" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/priceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp2"
+            android:text="Price"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/priceTv"
+            android:padding="@dimen/dp4"
+            android:text="82.40"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp2"
+            android:text="05-30 05:54:52"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/dp10"
+        android:paddingRight="@dimen/dp10">
+
+        <TextView
+            android:id="@+id/amtTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp2"
+            android:text="Amount"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/amt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/amtTv"
+            android:alpha=".5"
+            android:padding="@dimen/dp4"
+            android:text="170.40"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:alpha=".7"
+            android:padding="@dimen/dp2"
+            android:text="05-30 05:54:52"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp16"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp10"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginRight="@dimen/dp10"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@drawable/search_bg"
+        android:paddingLeft="@dimen/dp20"
+        android:paddingTop="@dimen/dp5"
+        android:paddingRight="@dimen/dp20"
+        android:paddingBottom="@dimen/dp5"
+        android:text="Remarks msg" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/dp5"
+        android:layout_marginBottom="@dimen/dp5"
+        android:background="@color/btnback" />
+</androidx.appcompat.widget.LinearLayoutCompat>

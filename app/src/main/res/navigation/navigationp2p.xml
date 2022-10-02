@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigationp2p"
+    app:startDestination="@+id/navigation_home">
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.e.cellpaycrypto.Fragment.P2PFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/activity_coin_list" />
+
+    <fragment
+        android:id="@+id/navigation_orders"
+        android:name="com.e.cellpaycrypto.Fragment.OrdersFragment"
+        android:label="@string/title_orders"
+        tools:layout="@layout/activity_orders" />
+    <fragment
+        android:id="@+id/navigation_ads"
+        android:name="com.e.cellpaycrypto.Fragment.AdsFragment"
+        android:label="@string/title_Ads"
+        tools:layout="@layout/activity_show_ads" />
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="com.e.cellpaycrypto.Fragment.NewProfileFragment"
+        android:label="@string/title_profile"
+        tools:layout="@layout/fragment_profile" />
+
+</navigation>

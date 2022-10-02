@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".buy.Buy2Activity">
+
+    <include layout="@layout/toolbar_main_1" />
+
+
+    <!--    <androidx.core.widget.NestedScrollView-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/cvr1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnBottoms"
+            android:layout_alignParentTop="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="Order Created"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold"
+                    android:visibility="gone" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="Pay the Seller within "
+                        android:textColor="@color/hint_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp5"
+                        android:text="15:00"
+                        android:textColor="@color/colorPrimaryDark" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/rect2"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dp10">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                            android:drawablePadding="@dimen/dp15"
+                            android:gravity="center_vertical"
+                            android:paddingLeft="@dimen/dp10"
+                            android:text="Seller name" />
+
+                    </RelativeLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:drawableEnd="@drawable/ic_baseline_keyboard_arrow_right_24"
+                        android:drawablePadding="@dimen/dp15"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="@dimen/dp10"
+                        android:text="Sellpay holding  the seller's  Asset in the  ASB account" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/back_cpd"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/infoIBall"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:src="@drawable/ic_outline_info_24"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toRightOf="@id/infoIBall"
+                        android:padding="@dimen/dp10"
+                        android:text="Only supports real-name verified payment methods."
+                        android:textColor="@color/colorPrimaryDark" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp6"
+                    android:background="@drawable/rect2"
+                    android:elevation="@dimen/dp4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10"
+                    android:text="BUY SPC"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Flat Amount"
+                        android:textColor="@color/hint_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rs 83570.83"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Price"
+                        android:textColor="@color/hint_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="Rs 83.57"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:text="Assets Amount"
+                        android:textColor="@color/hint_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:text="1000.00 SPC"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="@dimen/dp10">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:text="Order Number"
+                        android:textColor="@color/hint_text_color" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="@dimen/dp10"
+                        android:layout_toLeftOf="@id/copyBtn2"
+                        android:text="234545768765"
+                        android:textColor="@color/black" />
+
+                    <ImageView
+                        android:id="@+id/copyBtn2"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/rect2"
+                        android:padding="@dimen/dp4"
+                        android:src="@drawable/ic_baseline_copy_all_24"
+                        app:tint="@color/colorPrimary" />
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp10"
+                    android:background="@drawable/rect2"
+                    android:elevation="@dimen/dp4" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:alpha=".6"
+                    android:padding="@dimen/dp10"
+                    android:text="Payment Method"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp18"
+                    android:textStyle="bold" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp5"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp5">
+
+                        <View
+                            android:id="@+id/v1"
+                            android:layout_width="4dp"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/tv1Paytm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start"
+                            android:layout_toRightOf="@id/v1"
+                            android:gravity="start|center_vertical"
+                            android:padding="@dimen/dp10"
+                            android:text="Paytm" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp5"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp5">
+
+                        <View
+                            android:id="@+id/v2"
+                            android:layout_width="4dp"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/tv2Paytm"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start"
+                            android:layout_toRightOf="@id/v2"
+                            android:gravity="start|center_vertical"
+                            android:padding="@dimen/dp10"
+                            android:text="Phone Pay" />
+
+                    </RelativeLayout>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:alpha=".7"
+                    android:text="Terms"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/sp20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:padding="@dimen/dp10"
+                    android:text="@string/lorem"
+                    android:textColor="@color/hint_text_color" />
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/btnBottoms"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp3"
+                android:layout_weight=".6"
+                android:background="@drawable/btn_ripple3"
+                android:text="Cancel"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp3"
+                android:layout_weight=".3"
+                android:background="@drawable/btn_ripple2"
+                android:text="Make Payment"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </RelativeLayout>
+    <!--    </androidx.core.widget.NestedScrollView>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

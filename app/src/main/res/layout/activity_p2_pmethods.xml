@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+
+    android:orientation="vertical"
+    tools:context=".mypack.P2PMethodsActivity">
+
+    <include layout="@layout/toolbar_main_3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/btnAddPaymethods"
+            android:layout_alignParentTop="true"
+            android:fitsSystemWindows="true"
+
+            android:focusable="true"
+            android:overScrollMode="never">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp5">
+
+                    <View
+                        android:id="@+id/v1"
+                        android:layout_width="4dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/tv1Paytm"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="start"
+                        android:layout_toLeftOf="@id/editPaytm"
+                        android:layout_toRightOf="@id/v1"
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:text="Paytm" />
+
+                    <ImageView
+                        android:id="@+id/editPaytm"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/edit_img" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="Kajal yadav"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/btnback" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp5">
+
+                    <View
+                        android:id="@+id/v2"
+                        android:layout_width="4dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/tv2PhonePay"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="start"
+                        android:layout_toLeftOf="@id/editPhonePay"
+                        android:layout_toRightOf="@id/v2"
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:text="PhonePe" />
+
+                    <ImageView
+                        android:id="@+id/editPhonePay"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/edit_img" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:hint="Kajal yadav"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/hint_text_color"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/sp12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="7023864834"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/btnback" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp5">
+
+                    <View
+                        android:id="@+id/v3"
+                        android:layout_width="4dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/tv3Upi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="start"
+                        android:layout_toLeftOf="@id/editUpi"
+                        android:layout_toRightOf="@id/v3"
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:text="UPI" />
+
+                    <ImageView
+                        android:id="@+id/editUpi"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/edit_img" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:hint="Kajal yadav"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/sp12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="7023864834@barodampay"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/btnback" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:paddingLeft="@dimen/dp10"
+                    android:paddingTop="@dimen/dp5"
+                    android:paddingRight="@dimen/dp10"
+                    android:paddingBottom="@dimen/dp5">
+
+                    <View
+                        android:id="@+id/v4"
+                        android:layout_width="4dp"
+                        android:layout_height="@dimen/dp20"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:background="@color/colorPrimaryDark" />
+
+                    <TextView
+                        android:id="@+id/tv4BankTransfer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="start"
+                        android:layout_toLeftOf="@id/editBankDetails"
+                        android:layout_toRightOf="@id/v4"
+                        android:gravity="start|center_vertical"
+                        android:padding="@dimen/dp10"
+                        android:text="Bank Transfer (India)" />
+
+                    <ImageView
+                        android:id="@+id/editBankDetails"
+                        android:layout_width="@dimen/dp30"
+                        android:layout_height="@dimen/dp30"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="end|center_vertical"
+                        android:src="@drawable/edit_img" />
+                </RelativeLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:hint="Kajal yadav"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/sp12"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp10"
+                    android:text="955910004567801"
+                    android:textColor="@color/Black"
+                    android:textSize="@dimen/sp16"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:hint="BARB0K00KAS"
+                    android:paddingLeft="@dimen/dp5"
+                    android:paddingTop="@dimen/dp5"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/sp12"
+                    android:textStyle="bold" />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:hint="current"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/sp12" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp16"
+                    android:hint="Bank Of Baroda"
+                    android:paddingLeft="@dimen/dp5"
+                    android:textColor="@color/Black"
+                    android:textColorHint="@color/hint_text_color"
+                    android:textSize="@dimen/sp12" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:background="@color/btnback" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/btnAddPaymethods"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:background="@drawable/btn_ripple"
+            android:text="Add Payment Methods"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

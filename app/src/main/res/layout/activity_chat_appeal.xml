@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".appealivity">
+
+    <include layout="@layout/toolbar_main_1" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="@color/cardview_light_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="Order will be cancelled in "
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp15" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10"
+            android:text="14:54"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="@dimen/sp15" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/amtTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="Amount"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_toRightOf="@id/amtTv"
+            android:text="Rs 18000.00"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp10"
+            android:text="Appeal"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <LinearLayout
+
+        android:id="@+id/cvrFakeNews"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dp10"
+        android:background="@color/lightBg_cpd"
+        android:orientation="horizontal"
+        android:visibility="visible">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".1"
+            android:padding="@dimen/dp6"
+            android:text="Do not release  the crypto withour receiving  the payment. Please  be aware  of scammers..." />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/dp4">
+
+            <ImageView
+                android:id="@+id/cancelCvrFake"
+                android:layout_width="@dimen/dp20"
+                android:layout_height="@dimen/dp20"
+                android:layout_gravity="center"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/ic_clear_black_24dp" />
+
+            <TextView
+                android:id="@+id/btnDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/dp4"
+                android:gravity="center"
+                android:text="Details"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp10" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <LinearLayout
+            android:id="@+id/bottomlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp5"
+            android:layout_marginBottom="@dimen/dp5"
+            android:orientation="vertical"
+            android:visibility="visible">
+
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="@dimen/dp5"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginEnd="@dimen/dp5"
+                android:layout_marginBottom="@dimen/dp5"
+                android:background="@color/cardview_light_background"
+                android:orientation="horizontal"
+                android:visibility="visible">
+
+                <!--  <EditText
+                      android:background="@drawable/bg_lets_talk"
+                      android:id="@+id/et_message"
+                      android:layout_width="0dp"
+                      android:layout_height="match_parent"
+                      android:layout_gravity="center_vertical"
+                      android:layout_weight="1"
+                      android:hint="Enter your message here"
+                      android:padding="@dimen/dp5"
+                      android:paddingLeft="@dimen/dp2"
+                      android:textColorHint="@color/greayrefcode_dark"
+                      android:textSize="@dimen/extrasmall_text_size_12" />-->
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1">
+
+
+                    <EditText
+                        android:id="@+id/et_message"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@null"
+                        android:hint="Please Enter Content Here"
+                        android:maxLines="2"
+                        android:paddingLeft="@dimen/dp12"
+                        android:paddingTop="@dimen/dp5"
+                        android:paddingRight="@dimen/dp12"
+                        android:paddingBottom="@dimen/dp5"
+                        android:textColorHint="@color/txt_gray"
+                        android:textSize="@dimen/extrasmall_text_size_12" />
+
+
+                </RelativeLayout>
+
+
+                <ImageView
+                    android:id="@+id/iv_send"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_send_ic_new" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

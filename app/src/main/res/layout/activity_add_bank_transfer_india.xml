@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".AddBankTransferIndiaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".07"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".1">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_gravity="center|left"
+                    android:src="@drawable/ic_baseline_arrow_back_ios_24"
+                    app:tint="#6E6767" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight=".8">
+
+                <TextView
+                    android:id="@+id/nametype"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text=""
+                    android:textColor="@color/Black"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".8"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="2dp"
+                        android:padding="3dp"
+                        android:text="Account holder name"
+                        android:textColor="#939191"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etFullName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/register_button"
+                        android:backgroundTint="#43ECE7E7"
+                        android:fontFamily="sans-serif"
+                        android:hint="Enter your full name"
+                        android:imeOptions="actionDone"
+                        android:inputType="textPersonName"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="2dp"
+                        android:padding="3dp"
+                        android:text="Account no."
+                        android:textColor="#939191"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etAccountNo"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/register_button"
+                        android:backgroundTint="#43ECE7E7"
+                        android:fontFamily="sans-serif"
+                        android:hint="Enter your bank account number"
+                        android:imeOptions="actionDone"
+                        android:inputType="number"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="2dp"
+                        android:padding="3dp"
+                        android:text="IFSC code"
+                        android:textColor="#939191"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etIfscCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/register_button"
+                        android:backgroundTint="#43ECE7E7"
+                        android:fontFamily="sans-serif"
+                        android:hint="Enter your IFSC code"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="2dp"
+                        android:padding="3dp"
+                        android:text="Account Type"
+                        android:textColor="#939191"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinnBankType"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/editspinnerenable"
+
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="2dp"
+                        android:padding="3dp"
+                        android:text="Bank Name"
+                        android:textColor="#939191"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/spinBankName"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/editspinnerenable"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+
+                        />
+
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="2dp"
+                        android:padding="3dp"
+                        android:text="Account opening branch"
+                        android:textColor="#939191"
+                        android:textSize="11dp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/etAccOpenBra"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/register_button"
+                        android:backgroundTint="#43ECE7E7"
+                        android:fontFamily="sans-serif"
+                        android:hint="Enter bank branch information"
+                        android:imeOptions="actionDone"
+                        android:inputType="text"
+                        android:maxLength="20"
+                        android:padding="10dp"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="13dp" />
+
+
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight=".13"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:padding="3dp"
+                android:text="Tip: The added payment method will be shown tho the buyer during the transaction to accept fiat transfers. Plese make sure the information is correct."
+                android:textColor="#939191"
+                android:textSize="9dp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="36dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="20dp"
+                android:background="#DAD5D5"
+                android:gravity="center"
+                android:text="Confirm"
+                android:textAllCaps="false"
+                android:textColor="#817F7F"
+                android:textSize="11dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

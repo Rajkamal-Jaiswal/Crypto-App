@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp50"
+        android:layout_margin="1dp"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:weightSum="1">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/circulerImage"
+            android:layout_width="@dimen/dp30"
+            android:layout_height="@dimen/dp30"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/default_pic"
+            app:civ_border_width="2dp" />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/circulerImage"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/sharesTxt"
+            android:layout_toRightOf="@id/circulerImage"
+            android:ellipsize="marquee"
+            android:gravity="center|left"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:padding="10dp"
+            android:paddingLeft="@dimen/dp4"
+            android:text="Coin Name"
+            android:textColor="@color/Black"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/sharesTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/v1"
+            android:padding="@dimen/dp10"
+            android:text="1525 Trades"
+            android:textColor="@color/hint_text_color" />
+
+        <View
+            android:id="@+id/v1"
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp4"
+            android:layout_marginBottom="@dimen/dp10"
+            android:layout_toLeftOf="@id/viewBtn"
+            android:background="@color/btnback" />
+
+        <TextView
+            android:id="@+id/viewBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp10"
+            android:src="@drawable/ic_baseline_arrow_forward_24"
+            android:text="90.18 %" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/priceTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp10"
+            android:text="Price"
+            android:textColor="@color/hint_text_color" />
+
+        <TextView
+            android:id="@+id/tvCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceTv"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp10"
+            android:paddingRight="@dimen/dp10"
+            android:text="82.44"
+            android:textColor="@color/Black"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/priceTv"
+            android:layout_alignBaseline="@id/tvCost"
+            android:layout_toRightOf="@id/tvCost"
+            android:padding="@dimen/dp10"
+            android:text="INR"
+            android:textSize="@dimen/sp20" />
+
+        <Button
+            android:id="@+id/btn1"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/dp32"
+            android:layout_alignParentRight="true"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp4"
+            android:layout_marginRight="@dimen/dp5"
+            android:background="@drawable/btn_ripple"
+            android:text="Buy"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp12" />
+
+        <RelativeLayout
+            android:id="@+id/cvrAssetamt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvCost"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Assets amount"
+                android:textColor="@color/txt_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="50.00 SPC"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cvrAssetamt"
+            android:layout_marginStart="@dimen/dp15"
+            android:layout_marginTop="@dimen/dp5"
+            android:layout_marginEnd="@dimen/dp15">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Limit"
+                android:textColor="@color/txt_gray"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:text="Rs 10000 - Rs 30000"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp18" />
+
+        </RelativeLayout>
+
+        <!--        tvCost-->
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/bsck" />
+</LinearLayout>

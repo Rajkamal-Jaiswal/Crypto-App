@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".buy.CancelOrderActivity">
+
+    <include layout="@layout/toolbar_main_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/btnCancel"
+            android:layout_alignParentTop="true">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:background="@drawable/back_gray"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp15"
+                        android:drawableStart="@drawable/ic_baseline_access_time_filled_24"
+                        android:drawablePadding="5dp"
+                        android:text="Tips"
+                        android:textColor="@color/Black"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp35"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:text="1. If you have already seller. Please do not cancel the order."
+                        android:textColor="#47484e"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp35"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:text="2. If the seller does not reply to chat within 15 mins, you will be unaccountable for this order's cancellation. It will be not affect your completion rate. You cane make up to 5 unaccountable in a day."
+                        android:textColor="#47484e"
+                        android:textSize="14sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/dp35"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:layout_marginEnd="@dimen/dp10"
+                        android:layout_marginBottom="@dimen/dp10"
+                        android:text="3. Your Account will be SUSPENDED fro the day if you exceed 3 accountable cancellation in a day."
+                        android:textColor="#47484e"
+                        android:textSize="14sp" />
+
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:text="Why do you want to cancel the order?"
+                    android:textColor="@color/Black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp15"
+                    android:layout_marginTop="3dp"
+                    android:layout_marginEnd="@dimen/dp15"
+                    android:text="We keep your feedback conditional and aim to serve you better next time."
+                    android:textColor="@color/txt_gray"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/rbg1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp15">
+
+                    <RadioButton
+                        android:id="@+id/rb1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="@dimen/dp5"
+                        android:paddingEnd="@dimen/dp0"
+                        android:text="I do not want trade anymore."
+                        android:textColor="@color/txt_gray"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:paddingStart="@dimen/dp5"
+                        android:paddingEnd="@dimen/dp0"
+                        android:text="I do not meet the requirements of the advertiser's trading terms and condition."
+                        android:textColor="@color/txt_gray"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:paddingStart="@dimen/dp5"
+                        android:paddingEnd="@dimen/dp0"
+                        android:text="Seller is asking for extra fee."
+                        android:textColor="@color/txt_gray"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:paddingStart="@dimen/dp5"
+                        android:paddingEnd="@dimen/dp0"
+                        android:text="Problem with seller's payment method result in unsuccessful payments."
+                        android:textColor="@color/txt_gray"
+                        android:textSize="14sp" />
+
+                    <RadioButton
+                        android:id="@+id/rb5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:paddingStart="@dimen/dp5"
+                        android:paddingEnd="@dimen/dp0"
+                        android:text="Other Reasons"
+                        android:textColor="@color/txt_gray"
+                        android:textSize="14sp" />
+
+                </RadioGroup>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.core.widget.NestedScrollView>
+
+        <Button
+            android:id="@+id/btnCancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/btn_ripple"
+            android:text="Confirm Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

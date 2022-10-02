@@ -1,0 +1,367 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".screens.SupportActivity">
+
+    <include layout="@layout/toolbar_main_1" />
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:overScrollMode="never">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp110"
+                android:background="@drawable/stroke1"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:id="@+id/im1"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle1"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_headset"
+                    app:tint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/im1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:text="Customer Care"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/sp20"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:text="Coming soon..."
+                        android:visibility="visible" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dp10"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp110"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke1"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/im2"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle1"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/ic_tech_support"
+                        app:tint="@color/colorPrimary" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/im2"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im1"
+                            android:text="Tech. Support"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im1"
+                            android:text="9549555510"
+                            android:visibility="visible" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dp110"
+                    android:layout_marginLeft="@dimen/dp5"
+
+                    android:layout_weight="1"
+                    android:background="@drawable/stroke1"
+                    android:padding="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/im3"
+                        android:layout_width="@dimen/dp50"
+                        android:layout_height="@dimen/dp50"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle1"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/ic_tech_support"
+                        app:tint="@color/colorPrimary" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_toRightOf="@id/im3"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/tv5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im3"
+                            android:text="Trade Support"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/sp14"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/tv6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/tv1"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_toRightOf="@id/im3"
+                            android:text="Coming soon..."
+                            android:visibility="visible" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp110"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/stroke1"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:id="@+id/im4"
+                    android:layout_width="@dimen/dp60"
+                    android:layout_height="@dimen/dp60"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle1"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_support_hours"
+                    app:tint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/im4"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:text="Support Hours"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/t8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:alpha=".7"
+                        android:text="10:00 AM to 7:00 PM. Sunday Off"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp110"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/stroke1"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:id="@+id/im5"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle1"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_support_email"
+                    app:tint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/im5"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:text="Support Email"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:alpha=".7"
+                        android:text="appsellpay@yahoo.com"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp110"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/stroke1"
+                android:padding="@dimen/dp10">
+
+                <ImageView
+                    android:id="@+id/im6"
+                    android:layout_width="@dimen/dp50"
+                    android:layout_height="@dimen/dp50"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/circle1"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_support_address"
+                    app:tint="@color/colorPrimary" />
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_toRightOf="@id/im6"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:text="Address"
+                        android:textColor="@color/hint_text_color"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:alpha=".7"
+                        android:text="Anora Kala(Test Phase Mayur Bihar, 273340)"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp110"
+                android:layout_marginTop="@dimen/dp10"
+                android:background="@drawable/stroke1"
+                android:padding="@dimen/dp10">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:alpha=".7"
+                        android:text="Welcome to Sell Pay Digital moreover, if you still have any questions and/or comments, or if you wish to contact us for any suggestions or ask for some help, simple email us:\nappsellpay@yahoo.com"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.core.widget.NestedScrollView>
+</androidx.appcompat.widget.LinearLayoutCompat>

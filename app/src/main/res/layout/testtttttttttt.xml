@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:shrinkColumns="*"
+        android:stretchColumns="*">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv1"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_toRightOf="@id/im1"
+                android:padding="@dimen/dp2"
+                android:text="Sellpay OPC private limited"
+                android:textSize="@dimen/sp13"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/copyBtn3"
+                android:layout_width="@dimen/dp24"
+                android:layout_height="@dimen/dp24"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp16"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/ic_baseline_copy_all_24"
+                app:tint="@color/colorPrimary" />
+        </TableRow>
+
+
+    </TableLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

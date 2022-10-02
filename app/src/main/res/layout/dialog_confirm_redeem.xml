@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="@dimen/dp10">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="@dimen/dp150"
+        android:layout_height="@dimen/dp150"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/redeem_ui" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:alpha=".7"
+        android:padding="@dimen/dp10"
+        android:text="Confirm"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/dp16"
+        android:text="You are about to Redeem 50 SPC to 8078695008@ybl" />
+
+    <Button
+        android:id="@+id/btnCnfrmSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp10"
+        android:background="@drawable/btn_ripple"
+        android:text="Confirm Request"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <Button
+        android:id="@+id/btnCancle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="@dimen/dp10"
+
+        android:background="@drawable/btn_rip_selected_color"
+        android:text="Cancel"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dp1"
+                app:cardCornerRadius="@dimen/dp5"
+                app:cardElevation="@dimen/dp5">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginBottom="@dimen/dp5"
+                        android:background="@color/colorPrimaryDark"
+                        android:gravity="center_horizontal"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/titleDialog"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_margin="@dimen/dp4"
+                            android:layout_marginStart="@dimen/dp10"
+                            android:layout_marginEnd="@dimen/dp10"
+                            android:gravity="center_horizontal"
+                            android:padding="@dimen/dp5"
+                            android:text="Order Cancelled Successfully!"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/heading_text_size" />
+
+                    </LinearLayout>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <com.airbnb.lottie.LottieAnimationView
+                            android:id="@+id/animationView"
+                            android:layout_width="@dimen/dp150"
+                            android:layout_height="@dimen/dp150"
+                            android:layout_gravity="center"
+                            app:lottie_autoPlay="true"
+                            app:lottie_loop="true"
+                            app:lottie_rawRes="@raw/cancel" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <Button
+                        android:id="@+id/gotoHome"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dp16"
+                        android:background="@drawable/btn_ripple_circular_stroked"
+                        android:text="Go to Home"
+                        android:textAllCaps="false"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+
+            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

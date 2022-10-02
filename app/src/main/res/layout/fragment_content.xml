@@ -1,0 +1,251 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/title_txtView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="@string/hello_blank_fragment"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/referPageCvr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp160"
+            android:layout_margin="@dimen/dp10"
+            app:cardCornerRadius="@dimen/dp10"
+            app:cardUseCompatPadding="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/referearnimg" />
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            app:cardCornerRadius="@dimen/dp10"
+            app:cardUseCompatPadding="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:alpha=".7"
+                android:padding="@dimen/dp10"
+                android:text="Share. Get Paid. Repeat Refer &amp; Earn upto Rs. 100"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/sp20"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            app:cardCornerRadius="@dimen/dp16">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dp10"
+                    android:background="@drawable/rect_circle"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:alpha=".7"
+                        android:padding="@dimen/dp4"
+                        android:text="Share Your Code"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:alpha=".7"
+                            android:gravity="center"
+                            android:text="6255525262"
+                            android:textColor="@color/black"
+                            android:textStyle="bold" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:gravity="center"
+                            android:padding="@dimen/dp4"
+                            android:src="@drawable/ic_baseline_copy_all_24"
+                            app:tint="@color/colorPrimary" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/dp10">
+
+                        <ImageView
+                            android:layout_width="@dimen/dp35"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_margin="@dimen/dp4"
+                            android:src="@drawable/whatsapp" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp35"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_margin="@dimen/dp4"
+                            android:src="@drawable/instagram" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp35"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_margin="@dimen/dp4"
+                            android:src="@drawable/facebook" />
+
+                        <ImageView
+                            android:layout_width="@dimen/dp35"
+                            android:layout_height="@dimen/dp35"
+                            android:layout_margin="@dimen/dp4"
+                            android:src="@drawable/sharing" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/im1"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle1"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/ic_plus"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:text="Earn on Signup"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv1"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im1"
+                        android:text="Get 1 SPC bonus money when your friend signup"
+                        android:textSize="@dimen/sp12" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginRight="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10">
+
+                    <ImageView
+                        android:id="@+id/im2"
+                        android:layout_width="@dimen/dp40"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_centerVertical="true"
+                        android:background="@drawable/circle1"
+                        android:padding="@dimen/dp10"
+                        android:src="@drawable/ic_plus"
+                        app:tint="@color/colorPrimary" />
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im2"
+                        android:text="Earn on Deposit"
+                        android:textColor="@color/black"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tv3"
+                        android:layout_marginLeft="@dimen/dp10"
+                        android:layout_toRightOf="@id/im2"
+                        android:text="Get upto Rs 100 on Friend's deposit \nApplicable on first deposit"
+                        android:textSize="@dimen/sp12" />
+                </RelativeLayout>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.cardview.widget.CardView>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/myReferralPage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

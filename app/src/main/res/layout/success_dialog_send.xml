@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dp1"
+            app:cardCornerRadius="@dimen/dp24"
+            app:cardElevation="@dimen/dp5">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dp20"
+                android:layout_marginBottom="@dimen/dp20"
+                android:orientation="vertical"
+                android:padding="@dimen/dp16">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/animationView"
+                    android:layout_width="@dimen/dp250"
+                    android:layout_height="@dimen/dp250"
+                    android:layout_gravity="center"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/success" />
+
+                <TextView
+                    android:id="@+id/titleDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp40"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="Payment Successful"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/post_text_size_x" />
+
+                <TextView
+                    android:id="@+id/msgDialog"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_margin="10dp"
+                    android:text="1 INR"
+                    android:textColor="@color/black"
+                    android:textSize="26sp" />
+
+                <TextView
+                    android:id="@+id/nhbvh"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:fontFamily="sans-serif"
+                    android:gravity="center_horizontal"
+                    android:text="The recipient can check the balance in his funding wallet"
+                    android:textColor="@color/hint_text_color"
+                    android:textSize="@dimen/sp12" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="34dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/btn_submit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="@dimen/dp40"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="@dimen/dp24"
+                        android:layout_marginTop="@dimen/dp4"
+                        android:layout_marginRight="@dimen/dp24"
+                        android:layout_marginBottom="@dimen/dp4"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_ripple3"
+                        android:padding="@dimen/dp5"
+                        android:text="@string/go_back_login"
+                        android:textAllCaps="false"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/sp16" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

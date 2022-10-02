@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clMain"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".Activity.PaymentGatewayActivity">
+
+    <include layout="@layout/toolbar_main_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp50"
+            android:layout_marginRight="@dimen/dp10"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="Amount"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text_size" />
+
+            <EditText
+                android:id="@+id/etAmt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:background="@drawable/rect2"
+                android:hint="Enter Amount"
+                android:inputType="number"
+                android:padding="@dimen/dp10"
+                android:textColorHint="@color/hint_text_color" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/dp16"
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_marginEnd="@dimen/dp16"
+            android:layout_marginBottom="@dimen/dp16"
+            android:background="@drawable/btn_ripple"
+            android:gravity="center"
+            android:text="Pay"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/MyTest/SellPay/app/src/main/res/drawable/btn_ripple.xml" value="0.1455" />
+        <entry key="..\:/MyTest/SellPay/app/src/main/res/drawable/video_round_corner.xml" value="0.1455" />
+        <entry key="..\:/MyTest/SellPay/app/src/main/res/layout/activity_add_bank_transfer_india.xml" value="0.1" />
+        <entry key="..\:/MyTest/SellPay/app/src/main/res/layout/activity_select_pament_method.xml" value="0.18802083333333333" />
+        <entry key="..\:/MyTest/SellPay/app/src/main/res/layout/fragment_m_ainfragment.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/circle2.xml" value="0.1955" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/common_round_corners_button_drawable.xml" value="0.173" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/ic_baseline_keyboard_arrow_right_24.xml" value="0.1955" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/ic_if_user.xml" value="0.123" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/ic_keyboard_arrow_down_black_24dp.xml" value="0.1115" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/ic_notifications_24.xml" value="0.158" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/rect3_cp_dark.xml" value="0.158" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/drawable/text_bg1.xml" value="0.1115" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_add_bank_transfer_india.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_buy.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_buy2.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_buy3.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_cahnge_passwoerd.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_cancel_order.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_coin_list.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_common_for_fragments.xml" value="0.1638888888888889" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_dashboard.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_deposit.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_earn.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_notification_management.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_orders.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_p2_pdashboard.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_payment_gateway.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_referral.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_select_pament_method.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_sell_master.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_sell_part2.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_sell_part3.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_spalsh.xml" value="0.1574074074074074" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_support.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/activity_transfer.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/app_bar_main.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/bottom_dialog_add_bank_transfer.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/coin_list_view.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/custom_ads_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/custom_chat_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/custom_dialog_to_pick_image.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/custom_layour_for_referral.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/custom_layout_common_payee.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/deposit_dialog.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/dialog_alert_simple.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/dialog_confirm_redeem.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/dialog_risk_notice.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/edit_bank_details_layout.xml" value="0.2" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/edit_paytm_layout.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/edit_phone_pay_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/edit_upi_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_content.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_dashboard.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_futures.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_home.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_m_ainfragment.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_new_profile.xml" value="0.18461538461538463" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_notifications.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_premium_membership.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_profile.xml" value="0.1638888888888889" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_wallets.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/fragment_withdrawal.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_active_inactive.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_available_balances.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_dash1.xml" value="0.10277777777777777" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_history_trade.xml" value="0.10277777777777777" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_order_layout_p2p.xml" value="0.10277777777777777" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_positions_trade.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_premium_membership.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/item_stock_menus.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/layout_profile.xml" value="0.1638888888888889" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/lets_collect_all.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/mai_app_bar.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/pay_pin_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/select_payment_method_sell.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/select_payment_method_to_buy.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/sell_part1.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/state_city_dialog.xml" value="0.18645833333333334" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/state_city_dialog_adapter_item.xml" value="0.18645833333333334" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/testtttttttttt.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/toolbar_main_1.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/Git Sellpay/SellPay-New/app/src/main/res/layout/toolbar_main_3.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable-anydpi/ic_account_android.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/back_gray.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_call.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_color_cp_ripple.xml" value="0.1955" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_put_color.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_rip_selected_color.xml" value="0.1" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_ripple.xml" value="0.1" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_ripple2.xml" value="0.1745" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_ripple3.xml" value="0.1745" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_ripple4.xml" value="0.1745" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btn_ripple_circular_stroked.xml" value="0.1745" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/btnbxckl.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/buttoncorner.xml" value="0.1705" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/circle_1.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/circle_2.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/corner_chat_item_left.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/corner_chat_item_right.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_account_android.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_ads_24.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_baseline_copy_all_24.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_home_black_24dp.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_notifications.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_notifications_24.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_notifications_black_24dp.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_orders_24.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_outline_gallery_24.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_outline_mark_chat_unread_24.xml" value="0.1705" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_send_ic_new.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/ic_trades.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/rect2.xml" value="0.1745" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/rect3_cp_dark.xml" value="0.1725" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/rect_1_simple.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/rect_1_white.xml" value="0.14" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/rect_line.xml" value="0.1725" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/register_button.xml" value="0.2" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/search_bg.xml" value="0.1" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/stroke1.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/drawable/stroke2.xml" value="0.1845" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_active_inactive.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_add_bank_transfer_india.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_add_impsactivity.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_add_upi.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_appeal.xml" value="0.15555555555555556" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_banner_test.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_buy.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_buy2.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_buy3.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_cahnge_passwoerd.xml" value="0.1921875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_cancel_order.xml" value="0.1921875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_chat_appeal.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_coin_list.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_common_for_fragments.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_dashboard.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_deposit.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_do_kyc.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_earn.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_login.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_main.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_notification_management.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_orders.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_p2_pdashboard.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_p2_pmethods.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_password_set.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_payment_gateway.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_recovery_password.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_referral.xml" value="0.1921875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_register.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_regiterotp.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_release.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_screen1.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_screen2.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_select_pament_method.xml" value="0.2" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_sell_master.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_sell_part2.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_sell_part3.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_settings.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_show_ads.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_spalsh.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_support.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_transaction_history.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_transfer.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/activity_withdrawal_request.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/app_bar_main.xml" value="0.1" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/bottom_dialog_add_bank_transfer.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/btn_rip_circulr_colored.xml" value="0.1" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/coin_list_view.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/content_main.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/custom_ads_layout.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/custom_chat_layout.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/custom_dialog_to_pick_image.xml" value="0.1921875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/custom_layour_for_referral.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/custom_layout_common_payee.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/deposit_dialog.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/dialog_alert_simple.xml" value="0.1921875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/dialog_confirm_redeem.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/dialog_risk_notice.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/edit_bank_details_layout.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/edit_paytm_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/edit_phone_pay_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/edit_upi_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_all_orders.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_content.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_dashboard.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_futures.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_home.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_m_ainfragment.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_notifications.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_premium_membership.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_profile.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_referral.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_stack.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_walletcontent.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_wallets.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/fragment_withdrawal.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_active_inactive.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_available_balances.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_dash1.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_history_trade.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_order_layout_p2p.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_positions_trade.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_premium_membership.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_slider_banner.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/item_stock_menus.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/lets_collect_all.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/mai_app_bar.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/order_cancel_dialog.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/pay_pin_layout.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/promotion.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/select_payment_method_sell.xml" value="0.22" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/select_payment_method_to_buy.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/sell_part1.xml" value="0.33" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/spinnerdropdownitem.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/spinneritemback.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/spinnershowitemdropdown.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/success_dialog_send.xml" value="0.25" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/toolbar_main_1.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/layout/toolbar_main_3.xml" value="0.15391192817443353" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/menu/bottom_menu_new.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/menu/bottom_menu_p2p.xml" value="0.1875" />
+        <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/xml/provider_paths.xml" value="0.1921875" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".menus.ui.notifications.NotificationsFragment">
+
+    <TextView
+        android:id="@+id/text_notifications"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <!-- <androidx.core.widget.NestedScrollView
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">-->
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginRight="@dimen/dp10"
+            android:background="@drawable/btn_ripple"
+            android:clickable="false"
+            android:focusable="false"
+            android:gravity="center"
+            android:padding="@dimen/dp10"
+            android:text="ROPO Mining Trade"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10">
+
+            <ImageView
+                android:id="@+id/im1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/dp10"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/ic_baseline_compare_arrows_24"
+                app:tint="@color/black" />
+
+            <TextView
+                android:id="@+id/inrTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/im1"
+                android:padding="@dimen/dp0"
+                android:text="SPC INR"
+                android:textColor="@color/black"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/inrTv"
+                android:padding="@dimen/dp10"
+                android:text="17:25:28" />
+
+            <ImageView
+                android:id="@+id/im3"
+                android:layout_width="@dimen/dp30"
+                android:layout_height="@dimen/dp30"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@id/im2"
+                android:padding="@dimen/dp4"
+                android:src="@drawable/ic_connect" />
+
+            <ImageView
+                android:id="@+id/im2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/ic_baseline_more_horiz_24"
+                app:tint="@color/black" />
+
+        </RelativeLayout>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp10"
+                android:orientation="horizontal" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/dp30"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/cashBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:background="@drawable/rect2"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="25%" />
+
+                <TextView
+                    android:id="@+id/tradeBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="50%" />
+
+                <TextView
+                    android:id="@+id/bonusBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="75%" />
+
+                <TextView
+                    android:id="@+id/bonus100Btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="@dimen/dp2"
+                    android:gravity="center"
+                    android:padding="@dimen/dp10"
+                    android:text="100%" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:text="Available Wallet Balance : "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="560.00 SPC"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp200"
+            android:layout_margin="@dimen/dp10"
+            android:scaleType="fitXY"
+            android:src="@drawable/dummy1" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_margin="@dimen/dp3"
+                    android:background="@drawable/btn_call"
+                    android:text="Call"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="Premium"
+                    android:textColor="@color/hint_text_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:text="0.0000 INR"
+                    android:textColor="@color/hint_text_color" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="34dp"
+                    android:layout_margin="@dimen/dp3"
+                    android:background="@drawable/btn_put_color"
+                    android:text="Put"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:autoSizeMaxTextSize="@dimen/dp5"
+                    android:autoSizeMinTextSize="@dimen/dp5"
+                    android:text="Premium"
+                    android:textColor="@color/hint_text_color" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="0.0000 INR"
+                    android:textColor="@color/hint_text_color" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/positionsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@drawable/rect2"
+                android:padding="@dimen/dp10"
+                android:text="Positions"
+                android:textSize="@dimen/sp12" />
+
+            <TextView
+                android:id="@+id/historyBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:background="@drawable/rect_normal"
+                android:padding="@dimen/dp10"
+                android:text="History"
+                android:textSize="@dimen/sp12" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:nestedScrollingEnabled="false"
+            android:padding="@dimen/dp10"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp5"
+            android:nestedScrollingEnabled="false"
+            android:padding="@dimen/dp10" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+    <!--    </androidx.core.widget.NestedScrollView>-->
+</androidx.appcompat.widget.LinearLayoutCompat>

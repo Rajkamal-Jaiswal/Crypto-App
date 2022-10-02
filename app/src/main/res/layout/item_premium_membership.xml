@@ -1,0 +1,130 @@
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/dp6"
+        app:cardUseCompatPadding="true">
+        <!-- android:background="@drawable/btn_ripple4"-->
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/cover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clickable="true"
+            android:focusable="true"
+            android:weightSum="10">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="5"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/imCover"
+                    android:layout_width="@dimen/dp45"
+                    android:layout_height="@dimen/dp45"
+                    android:layout_marginStart="@dimen/dp5"
+                    android:layout_marginTop="@dimen/dp5"
+                    android:layout_marginEnd="@dimen/dp5"
+                    android:layout_marginBottom="@dimen/dp5"
+                    android:background="@drawable/circle_stars"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/numb"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textStyle="bold" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dp10"
+                    android:layout_toLeftOf="@id/cvrGreen"
+                    android:layout_toRightOf="@id/imCover"
+                    android:alpha=".7"
+                    android:padding="@dimen/dp10"
+                    android:text="Level"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrGreen"
+                    android:layout_width="@dimen/dp35"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dp4"
+
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_toLeftOf="@+id/cvrRed"
+                    android:background="@drawable/circle_2" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="2"
+                android:gravity="center">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrRed"
+                    android:layout_width="@dimen/dp35"
+                    android:layout_height="@dimen/dp35"
+                    android:layout_centerVertical="true"
+                    android:layout_marginStart="@dimen/dp4"
+
+                    android:layout_marginTop="@dimen/dp4"
+
+                    android:layout_marginBottom="@dimen/dp4"
+                    android:layout_toLeftOf="@+id/totl"
+                    android:background="@drawable/circle_1" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <TextView
+                android:id="@+id/totl"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:padding="@dimen/dp5"
+                android:text="41"
+                android:textColor="@color/black" />
+
+            <!-- <ImageView
+                 android:id="@+id/imageView_arrow"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:layout_alignParentRight="true"
+                 android:layout_centerVertical="true"
+                 android:padding="@dimen/dp10"
+                 android:src="@drawable/ic_baseline_keyboard_arrow_right_24"
+                 android:visibility="gone" />-->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </androidx.cardview.widget.CardView>
+</androidx.appcompat.widget.LinearLayoutCompat>

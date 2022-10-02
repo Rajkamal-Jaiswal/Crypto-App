@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:background="@color/cardview_light_background"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/userIc"
+            android:layout_width="@dimen/dp40"
+            android:layout_height="@dimen/dp40"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_account_android"
+            app:tint="@color/colorPrimary" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_margin="@dimen/dp4"
+            android:layout_toLeftOf="@id/qrScanIc"
+            android:layout_toRightOf="@id/userIc"
+            android:background="@drawable/search_bg">
+
+            <ImageView
+                android:id="@+id/searchIc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp6"
+                android:src="@drawable/ic_search"
+                android:visibility="gone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:hint="Today's Price: 120 SPC"
+                android:paddingLeft="@dimen/dp10"
+                android:paddingTop="@dimen/dp8"
+                android:paddingRight="@dimen/dp10"
+                android:paddingBottom="@dimen/dp8"
+                android:textColorHint="@color/hint_text_color"
+                android:textSize="@dimen/sp12"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/qrScanIc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/headsetIc"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/ic_qr_scan"
+            app:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/headsetIc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/notiIc"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/ic_headset"
+            app:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/notiIc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/connectIc"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/ic_notifications_black_24dp"
+            app:tint="@color/colorPrimary" />
+
+        <ImageView
+            android:id="@+id/connectIc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:padding="@dimen/dp4"
+            android:src="@drawable/ic_connect"
+            app:tint="@color/colorPrimary" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="?android:attr/windowBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottom_menu_p2p" />
+
+
+    <fragment
+        android:id="@+id/nav_host_fragment_activity_dashboardp2p"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:defaultNavHost="true"
+        app:layout_constraintBottom_toTopOf="@+id/nav_view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolBar"
+        app:navGraph="@navigation/navigationp2p" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

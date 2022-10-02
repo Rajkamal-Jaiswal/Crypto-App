@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/mainTool"
+        layout="@layout/toolbar_main_1" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginTop="@dimen/dp10"
+                android:alpha=".7"
+                android:text="3/3. Set Remarks &amp; Automatic Response"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp12" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal">
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp10"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@drawable/rect3_cp_dark" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp10"
+                            android:layout_centerVertical="true"
+                            android:layout_marginRight="@dimen/dp16"
+                            android:background="@drawable/rect3_cp_dark" />
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/dp10"
+                    android:layout_marginTop="@dimen/dp10"
+                    android:layout_marginEnd="@dimen/dp10"
+                    android:layout_marginBottom="@dimen/dp10"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:id="@+id/c1"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle2"
+                        android:gravity="center">
+
+                        <!-- <TextView
+                             android:layout_width="wrap_content"
+                             android:layout_height="wrap_content"
+                             android:layout_gravity="center"
+                             android:gravity="center"
+                             android:text="1"
+                             android:textColor="@color/white" />-->
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:src="@drawable/ic_check_small"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp10"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect3_cp_dark" />
+
+                    <LinearLayout
+                        android:id="@+id/c2"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle2"
+                        android:gravity="center">
+
+                        <!--<TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="2"
+                            android:textColor="@color/white" />-->
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:src="@drawable/ic_check_small"
+                            app:tint="@color/white" />
+                    </LinearLayout>
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dp10"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="@drawable/rect3_cp_dark" />
+
+                    <LinearLayout
+                        android:id="@+id/c3"
+                        android:layout_width="@dimen/dp24"
+                        android:layout_height="@dimen/dp24"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle2"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:text="3"
+                            android:textColor="@color/white" />
+                    </LinearLayout>
+
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </RelativeLayout>
+
+            <!--            <androidx.appcompat.widget.LinearLayoutCompat-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_margin="@dimen/dp10"-->
+            <!--                android:orientation="horizontal">-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/c1"-->
+            <!--                    android:layout_width="@dimen/dp24"-->
+            <!--                    android:layout_height="@dimen/dp24"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:background="@drawable/circle2"-->
+            <!--                    android:gravity="center">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="1"-->
+            <!--                        android:textColor="@color/white" />-->
+            <!--                </LinearLayout>-->
+
+            <!--                <View-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="@dimen/dp10"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@drawable/rect3_cp_dark" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/c2"-->
+            <!--                    android:layout_width="@dimen/dp24"-->
+            <!--                    android:layout_height="@dimen/dp24"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:background="@drawable/circle2"-->
+            <!--                    android:gravity="center">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="2"-->
+            <!--                        android:textColor="@color/white" />-->
+            <!--                </LinearLayout>-->
+
+
+            <!--                <View-->
+            <!--                    android:layout_width="match_parent"-->
+            <!--                    android:layout_height="@dimen/dp10"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:layout_weight="1"-->
+            <!--                    android:background="@drawable/rect3_cp_dark" />-->
+
+            <!--                <LinearLayout-->
+            <!--                    android:id="@+id/c3"-->
+            <!--                    android:layout_width="@dimen/dp24"-->
+            <!--                    android:layout_height="@dimen/dp24"-->
+            <!--                    android:layout_gravity="center"-->
+            <!--                    android:background="@drawable/circle2"-->
+            <!--                    android:gravity="center">-->
+
+            <!--                    <TextView-->
+            <!--                        android:layout_width="wrap_content"-->
+            <!--                        android:layout_height="wrap_content"-->
+            <!--                        android:layout_gravity="center"-->
+            <!--                        android:gravity="center"-->
+            <!--                        android:text="3"-->
+            <!--                        android:textColor="@color/white" />-->
+            <!--                </LinearLayout>-->
+
+
+            <!--            </androidx.appcompat.widget.LinearLayoutCompat>-->
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp10"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dp5"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/title"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Terms(Optional)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="start"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:background="@drawable/rect2"
+                        android:gravity="start"
+                        android:hint="Enter your message"
+                        android:minLines="3"
+                        android:padding="@dimen/dp10"
+                        android:textColorHint="@color/hint_text_color" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:text="Auto Reply (Optional)"
+                        android:textColor="@color/black"
+                        android:textSize="@dimen/small_text_size" />
+
+                    <androidx.appcompat.widget.LinearLayoutCompat
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp10"
+                        android:orientation="horizontal"
+                        android:weightSum="2">
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="start"
+                            android:layout_marginTop="@dimen/dp5"
+                            android:layout_weight="1"
+                            android:background="@drawable/rect2"
+                            android:gravity="start"
+                            android:hint="Enter your message"
+                            android:minLines="3"
+                            android:padding="@dimen/dp10"
+                            android:textColorHint="@color/hint_text_color" />
+
+
+                    </androidx.appcompat.widget.LinearLayoutCompat>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp1"
+                android:layout_marginTop="@dimen/sp15"
+                android:background="@color/btnback" />
+
+
+            <!--            <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:alpha=".7"
+                            android:gravity="center"
+                            android:text="Counter Party Conditions"
+                            android:textColor="@color/hint_text_color"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginTop="@dimen/dp10"
+                            android:alpha=".7"
+                            android:gravity="center"
+                            android:text="Adding conterparty requirements will reduce the exposure"
+                            android:textColor="@color/hint_text_color"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/dp1"
+                            android:layout_marginTop="@dimen/sp15"
+                            android:background="@color/btnback" />-->
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp10"
+            android:layout_marginEnd="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnPrevious"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp3"
+                android:layout_weight=".6"
+                android:background="@drawable/btn_ripple3"
+                android:text="Previous"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnNext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dp3"
+                android:layout_weight=".3"
+                android:background="@drawable/btn_ripple2"
+                android:text="Post"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+    </RelativeLayout>
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

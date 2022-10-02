@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical"
+    tools:context=".Activity.Regiterotp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10pt"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#39F3F3F3">
+
+
+            <ImageView
+                android:layout_width="140dp"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/selpaylogo" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="8pt"
+            android:layout_marginBottom="3dp"
+            android:layout_weight=".5"
+            android:gravity="bottom"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="5dp"
+                android:text="Otp Verification"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="140dp"
+                android:layout_height="2dp"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="2dp"
+                android:background="@color/colorPrimaryDark"
+                android:visibility="visible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginRight="30dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/lgback"
+            android:gravity="center"
+            android:text="OTP Verification"
+            android:textAllCaps="true"
+            android:textColor="@color/white"
+            android:textSize="8pt" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_4digit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center_horizontal"
+                android:text="Enter 4-digit OTP"
+                android:textColor="@color/colorAccent"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/otp_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <com.alimuzaffar.lib.pin.PinEntryEditText
+                    android:id="@+id/txt_pin_entry"
+                    android:layout_width="214dp"
+                    android:layout_height="match_parent"
+                    android:cursorVisible="false"
+                    android:digits="1234567890"
+                    android:inputType="number"
+                    android:maxLength="4"
+                    app:pinAnimationType="popIn" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/resend_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:text="Did not received the OTP?"
+                    android:textSize="16dp" />
+
+                <TextView
+                    android:id="@+id/resend_otp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:text="Resend OTP"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="24pt"
+                android:layout_marginTop="10dp"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/submit_otp"
+                    android:layout_width="70pt"
+                    android:layout_height="19pt"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/btnback"
+                    android:gravity="center"
+                    android:text="Submit"
+                    android:textColor="#FFFFFF"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

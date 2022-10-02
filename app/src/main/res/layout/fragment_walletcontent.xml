@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cardview_light_background"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@drawable/curve_dash"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp10"
+                android:text="Total Value (SPC)"
+                android:textColor="@color/hint_text_color" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:padding="@dimen/dp10"
+                android:src="@drawable/report_ic" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp10"
+            android:text="0.0000005"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/dp10"
+            android:paddingTop="@dimen/dp5"
+            android:text="=0.010522 INR"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/sp14" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dp10"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp36"
+                android:layout_marginLeft="@dimen/dp10"
+                android:layout_marginRight="@dimen/dp5"
+                android:layout_weight="1"
+                android:background="@drawable/btn_ripple"
+                android:text="Deposit"
+                android:textAllCaps="false"
+                android:textColor="@color/white" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dp5"
+                android:layout_marginRight="@dimen/dp10"
+                android:layout_weight="1"
+                android:text="Transfer"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp5"
+            android:layout_marginTop="@dimen/dp10"
+            android:background="@drawable/rect2" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp10"
+            android:paddingLeft="@dimen/dp10"
+            android:text="Available Balances"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/dp10" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
