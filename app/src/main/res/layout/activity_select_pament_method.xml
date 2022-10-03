@@ -115,7 +115,7 @@
                                     android:layout_height="match_parent"
                                     android:layout_marginLeft="10dp"
                                     android:gravity="center|left"
-                                    android:text="Paytm"
+                                    android:text="UPI Payments"
                                     android:textColor="@color/white"
                                     android:textSize="13dp"
                                     android:textStyle="bold" />

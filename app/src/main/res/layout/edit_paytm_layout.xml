@@ -36,7 +36,6 @@
                         android:orientation="vertical">
 
                         <TextView
-
                             android:id="@+id/titleDialog"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -60,8 +59,49 @@
                         android:padding="@dimen/dp16">
 
 
+                            <TextView
+                                android:id="@+id/title"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="Name"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/small_text_size" />
+
+                            <EditText
+                                android:id="@+id/upiHolderName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp10"
+                                android:background="@drawable/rect2"
+                                android:hint="Enter Account Name"
+                                android:padding="@dimen/dp10"
+                                android:textColorHint="@color/hint_text_color" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_margin="10dp"
+                                android:text="UPI ID"
+                                android:textColor="@color/black"
+                                android:textSize="@dimen/small_text_size" />
+
+                            <EditText
+                                android:id="@+id/upiId"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/dp10"
+
+                                android:background="@drawable/rect2"
+                                android:hint="Enter UPI ID"
+                                android:padding="@dimen/dp10"
+                                android:textColorHint="@color/hint_text_color" />
+
+
+
+
                         <TextView
-                            android:id="@+id/title"
+                            android:id="@+id/ebget"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_margin="10dp"
@@ -74,11 +114,30 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/dp10"
-                            android:layout_marginBottom="@dimen/dp20"
                             android:background="@drawable/rect2"
                             android:hint="Enter Paytm Number"
                             android:padding="@dimen/dp10"
                             android:textColorHint="@color/hint_text_color" />
+                        <TextView
+                            android:id="@+id/fwrefvrewq"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:text="Phone Pe Number"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/small_text_size" />
+
+                        <EditText
+                            android:id="@+id/inputBoxPhonePayNumber"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:layout_marginBottom="@dimen/dp20"
+                            android:background="@drawable/rect2"
+                            android:hint="Enter Phone Pe Number"
+                            android:padding="@dimen/dp10"
+                            android:textColorHint="@color/hint_text_color" />
+
 
                         <LinearLayout
                             android:layout_width="match_parent"

@@ -1,6 +1,7 @@
 package com.e.cellpaycrypto.Base;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Build;
@@ -16,10 +17,31 @@ import androidx.appcompat.app.AppCompatDelegate;
 import androidx.core.view.WindowInsetsControllerCompat;
 
 import com.e.cellpaycrypto.BuildConfig;
+import com.e.cellpaycrypto.R;
 
 import java.io.ByteArrayOutputStream;
 
 public class Helper {
+
+    public static ProgressDialog pDialog;
+
+    public static void showLoadingDialog(Context mContext) {
+        pDialog = new ProgressDialog(mContext);
+        pDialog.setMessage("Please wait...");
+        pDialog.setCancelable(false);
+        pDialog.show();
+//        pDialog.setContentView(R.layout.progress_layout);
+//        pDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+    }
+
+    public static void hideLoadingDialog() {
+        if (pDialog != null && pDialog.isShowing()) {
+            pDialog.dismiss();
+        }
+    }
+
+
     public static void hideKeyboard(Activity activity) {
         InputMethodManager imm = (InputMethodManager) activity.getSystemService(Activity.INPUT_METHOD_SERVICE);
         //Find the currently focused view, so we can grab the correct window token from it.
@@ -31,9 +53,10 @@ public class Helper {
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
     }
 
-    public static void watchLog( String TAG,String msg) {
+    public static void watchLog(String TAG, String msg) {
         Log.e(TAG, "watchLog: " + msg);
     }
+
     public static boolean isNullChek(String msg) {
         boolean result = false;
         if (msg != null && !TextUtils.isEmpty(msg)) {
@@ -41,6 +64,7 @@ public class Helper {
         }
         return result;
     }
+
     public static String encodeImage(Bitmap bm) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bm.compress(Bitmap.CompressFormat.JPEG, 100, baos);

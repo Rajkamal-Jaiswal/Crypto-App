@@ -92,6 +92,7 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/paytmTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -150,6 +151,7 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/phPeName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -162,6 +164,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/phonePeTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -220,6 +223,7 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/upiTxtName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -232,6 +236,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/upiIdTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -289,6 +294,7 @@
                 </RelativeLayout>
 
                 <TextView
+                    android:id="@+id/account_holder_name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -301,6 +307,7 @@
                     android:textStyle="bold" />
 
                 <TextView
+                    android:id="@+id/account_number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -313,6 +320,7 @@
 
 
                 <TextView
+                    android:id="@+id/ifscTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -326,6 +334,7 @@
 
 
                 <TextView
+                    android:id="@+id/accType"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"
@@ -336,6 +345,7 @@
                     android:textSize="@dimen/sp12" />
 
                 <TextView
+                    android:id="@+id/bankNameTxt"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginLeft="@dimen/dp16"

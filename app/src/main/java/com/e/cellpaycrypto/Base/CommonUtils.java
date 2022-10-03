@@ -6,6 +6,7 @@ package com.e.cellpaycrypto.Base;
 
 
 import android.content.Context;
+import android.widget.Toast;
 
 
 public class CommonUtils {
@@ -17,10 +18,11 @@ public class CommonUtils {
     public static final String shared_Phone_number = "phone";
     public static final String shared_Email = "email";
     public static final String shared_Rank = "rank";
+    public static final String paytm = "paytm";
 
 
-    public static void showToast(Context c) {
-        //Toast.makeText(c, "Something went wrong!", Toast.LENGTH_SHORT).show();
+    public static void showToast(Context c,String msg) {
+        Toast.makeText(c, msg, Toast.LENGTH_SHORT).show();
     }
 
 

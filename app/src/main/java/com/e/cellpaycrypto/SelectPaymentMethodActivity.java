@@ -7,6 +7,7 @@ import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
@@ -219,43 +220,104 @@ public class SelectPaymentMethodActivity extends AppCompatActivity {
             Objects.requireNonNull(watchlist.getWindow()).getAttributes().windowAnimations = R.style.PauseDialogAnimation;
             watchlist.setCancelable(false);
             watchlist.setCanceledOnTouchOutside(true);
-            binding.titleDialog.setText("Add Paytm Details");
+            binding.titleDialog.setText("Add Other Payment Details");
             binding.btnCancel.setOnClickListener(v1 -> {
                 watchlist.dismiss();
             });
             binding.btnSubmit.setOnClickListener(v1 -> {
-                Toast.makeText(SelectPaymentMethodActivity.this, "Remaining!", Toast.LENGTH_SHORT).show();
-                watchlist.cancel();
+
+                if (TextUtils.isEmpty(binding.upiHolderName.getText().toString())) {
+                    Helper.showToast("Please enter name", this);
+                    binding.upiHolderName.requestFocus();
+                } else if (TextUtils.isEmpty(binding.upiId.getText().toString())) {
+                    Helper.showToast("Please enter Upi id", this);
+                    binding.upiId.requestFocus();
+                } else if (TextUtils.isEmpty(binding.inputBoxPayNumber.getText().toString())) {
+                    Helper.showToast("Please enter paytm id", this);
+                    binding.inputBoxPayNumber.requestFocus();
+                } else if (TextUtils.isEmpty(binding.inputBoxPhonePayNumber.getText().toString())) {
+                    Helper.showToast("Please enter phone pe id", this);
+                    binding.inputBoxPhonePayNumber.requestFocus();
+                } else {
+                    hitApiToUpdatePaytmDetails(watchlist, binding.upiHolderName.getText().toString().trim()
+                            , binding.upiId.getText().toString().trim()
+                            , binding.inputBoxPayNumber.getText().toString().trim()
+                            , binding.inputBoxPhonePayNumber.getText().toString().trim()
+                    );
+                }
+
             });
             watchlist.show();
         });
-        bindingMain.llUpi.setOnClickListener(view -> {
-//            watchlist = new BottomSheetDialog(activity, R.style.videosheetDialogTheme);
-            EditUpiLayoutBinding binding;
-            binding = EditUpiLayoutBinding.inflate(getLayoutInflater());
-            watchlist.setContentView(binding.getRoot());
-            Objects.requireNonNull(watchlist.getWindow()).getAttributes().windowAnimations = R.style.PauseDialogAnimation;
-            watchlist.setCancelable(false);
-            watchlist.setCanceledOnTouchOutside(true);
-            binding.titleDialog.setText("Add UPI Details");
-            binding.btnCancel.setOnClickListener(v1 -> {
+        bindingMain.llUpi.setVisibility(View.GONE);
+//        bindingMain.llUpi.setOnClickListener(view -> {
+////            watchlist = new BottomSheetDialog(activity, R.style.videosheetDialogTheme);
+//            EditUpiLayoutBinding binding;
+//            binding = EditUpiLayoutBinding.inflate(getLayoutInflater());
+//            watchlist.setContentView(binding.getRoot());
+//            Objects.requireNonNull(watchlist.getWindow()).getAttributes().windowAnimations = R.style.PauseDialogAnimation;
+//            watchlist.setCancelable(false);
+//            watchlist.setCanceledOnTouchOutside(true);
+//            binding.titleDialog.setText("Add UPI Details");
+//            binding.btnCancel.setOnClickListener(v1 -> {
+//                watchlist.dismiss();
+//            });
+//            binding.btnSubmit.setOnClickListener(v1 -> {
+//                if (binding.upiHolderName.getText().toString().trim().isEmpty()) {
+//                    Helper.showToast("Name can't be empty", activity);
+//                    return;
+//                }
+//                if (binding.upiId.getText().toString().trim().isEmpty()) {
+//                    Helper.showToast("Name can't be empty", activity);
+//                    return;
+//                }
+//                hitApiAddUpiDetails(watchlist, binding.upiHolderName.getText().toString().trim(), binding.upiId.getText().toString().trim());
+//            });
+//            watchlist.show();
+//        });
+
+
+    }
+
+    private void hitApiToUpdatePaytmDetails(BottomSheetDialog watchlist, String name, String upiId, String paytmNo, String phonePeNo) {
+        Helper.showLoadingDialog(this);
+        StringRequest stringRequest = new StringRequest(Request.Method.POST, GlobalConstants.BASE_URL, response -> {
+            Helper.watchLog("EditUpdateUPiApi: ", response);
+            Helper.hideLoadingDialog();
+            try {
+                ModelResponse modelResponse = gson.fromJson(response, ModelResponse.class);
+                if (modelResponse.getResultCode().equalsIgnoreCase("200")) {
+                    watchlist.dismiss();
+                    Helper.showToast(modelResponse.getMessage(), activity);
+                } else {
+                    Helper.showToast(modelResponse.getMessage(), activity);
+                }
+            } catch (Exception e1) {
+                Helper.watchLog("Excep", e1.getLocalizedMessage());
                 watchlist.dismiss();
-            });
-            binding.btnSubmit.setOnClickListener(v1 -> {
-                if (binding.upiHolderName.getText().toString().trim().isEmpty()) {
-                    Helper.showToast("Name can't be empty", activity);
-                    return;
-                }
-                if (binding.upiId.getText().toString().trim().isEmpty()) {
-                    Helper.showToast("Name can't be empty", activity);
-                    return;
-                }
-                hitApiAddUpiDetails(watchlist, binding.upiHolderName.getText().toString().trim(), binding.upiId.getText().toString().trim());
-            });
-            watchlist.show();
-        });
+                Helper.showToast("Something went wrong", activity);
+            }
+        }, error -> {
+            Helper.hideLoadingDialog();
+            watchlist.dismiss();
+            Helper.showToast(error.getLocalizedMessage(), activity);
+        }) {
 
-
+            @Override
+            protected Map<String, String> getParams() {
+                Map<String, String> map = new HashMap<>();
+                map.put("module", WebURLS.URL_ADD_EDIT_UPI);
+                map.put("user_id", userid);
+                map.put("default_bank_id", WebURLS.default_bank_id);
+                map.put("upi_id", upiId);
+                map.put("upi_name", name);
+                map.put("paytm_no", paytmNo);
+                map.put("phonepe_no", phonePeNo);
+                Helper.watchLog("ParamsAddUpi", map.toString());
+                return map;
+            }
+        };
+        VolleySingleton.getInstance(getApplicationContext()).addToRequestQueue(stringRequest);
     }
 
     private void bankNameListDialog(TextView bankNameTv, List<BankListItem> bankListItems) {
@@ -320,8 +382,10 @@ public class SelectPaymentMethodActivity extends AppCompatActivity {
     }
 
     private void loadBankAccountsType() {
+        Helper.showLoadingDialog(this);
         StringRequest stringRequest = new StringRequest(Request.Method.POST, GlobalConstants.BASE_URL, response -> {
             Helper.watchLog("SelectPayMethods", response.toString());
+            Helper.hideLoadingDialog();
             ModelBankAccountTypes modelResponse = gson.fromJson(response, ModelBankAccountTypes.class);
             if (modelResponse.getResultCode().equalsIgnoreCase("200")) {
                 modelAccountTypes = modelResponse.getAccountTypeList();
@@ -330,6 +394,8 @@ public class SelectPaymentMethodActivity extends AppCompatActivity {
             }
 
         }, error -> {
+            Helper.hideLoadingDialog();
+
             watchlist.dismiss();
             Helper.showToast(error.getLocalizedMessage(), activity);
         }) {
