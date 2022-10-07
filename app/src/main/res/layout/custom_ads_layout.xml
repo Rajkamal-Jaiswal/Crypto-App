@@ -92,6 +92,7 @@
                 android:textColor="@color/hint_text_color" />
 
             <TextView
+                android:id="@+id/ttlAmt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
@@ -122,6 +123,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="end"
                 android:layout_weight="1"
+                android:id="@+id/orderLimit"
                 android:gravity="end"
                 android:text="14016.00 - 20000.00 INR"
                 android:textColor="@color/black" />

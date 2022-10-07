@@ -10,6 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.e.cellpaycrypto.apimodels.ModelShowAds;
 import com.e.cellpaycrypto.databinding.ActivityShowAdsBinding;
 import com.e.cellpaycrypto.mypack.SellActivityMaster;
 import com.e.cellpaycrypto.test1.AdapterMyAds;
@@ -25,7 +26,7 @@ public class AdsFragment extends Fragment {
     View root;
     RecyclerView recyclerView;
     //    private Toolbar toolbar;
-    List<ModelPojo> modelPojos;
+    List<ModelShowAds.DepositList> modelPojos;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -38,13 +39,13 @@ public class AdsFragment extends Fragment {
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         modelPojos = new ArrayList<>();
-        modelPojos.add(new ModelPojo("a"));
-        modelPojos.add(new ModelPojo("b"));
-        modelPojos.add(new ModelPojo("c"));
-        modelPojos.add(new ModelPojo("d"));
-        modelPojos.add(new ModelPojo("e"));
-        modelPojos.add(new ModelPojo("f"));
-        modelPojos.add(new ModelPojo("g"));
+        modelPojos.add(new ModelShowAds.DepositList("a","","","","",""));
+        modelPojos.add(new ModelShowAds.DepositList("b","","","","",""));
+        modelPojos.add(new ModelShowAds.DepositList("c","","","","",""));
+        modelPojos.add(new ModelShowAds.DepositList("d","","","","",""));
+        modelPojos.add(new ModelShowAds.DepositList("e","","","","",""));
+        modelPojos.add(new ModelShowAds.DepositList("f","","","","",""));
+        modelPojos.add(new ModelShowAds.DepositList("g","","","","",""));
         AdapterMyAds adapterMyAds = new AdapterMyAds(modelPojos);
         recyclerView.setAdapter(adapterMyAds);
 
