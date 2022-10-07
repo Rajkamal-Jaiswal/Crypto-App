@@ -8,5 +8,6 @@ public class WebURLS {
     public static final String URL_P2P_COIN_LIST = "coinList";
     public static final String default_bank_id = "2";
     public static final String userPaymentData = "userPaymentData";
+    public static final String depositList = "depositList";
 //    public static final String URL_ADD_EDIT_UPI = "addEditUpi";
 }
