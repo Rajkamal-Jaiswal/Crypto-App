@@ -47,6 +47,9 @@ public class ShowAdsActivity extends AppCompatActivity {
 
         hitApiToLoadAds();
 
+
+
+
         binding.addSell.setOnClickListener(v -> {
             startActivity(new Intent(getApplicationContext(), SellActivityMaster.class));
         });
