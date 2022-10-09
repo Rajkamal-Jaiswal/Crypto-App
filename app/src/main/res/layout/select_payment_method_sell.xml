@@ -53,313 +53,343 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                <RelativeLayout
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/paytmCvr"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:paddingLeft="@dimen/dp10"
-                    android:paddingTop="@dimen/dp5"
-                    android:paddingRight="@dimen/dp10"
-                    android:paddingBottom="@dimen/dp5">
+                    android:orientation="vertical">
 
-                    <View
-                        android:id="@+id/v1"
-                        android:layout_width="4dp"
-                        android:layout_height="@dimen/dp20"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="@dimen/dp10"
-                        android:background="@color/colorPrimaryDark" />
-
-                    <TextView
-                        android:id="@+id/tv1Paytm"
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="start"
-                        android:layout_toLeftOf="@id/editPaytm"
-                        android:layout_toRightOf="@id/v1"
-                        android:gravity="start|center_vertical"
-                        android:padding="@dimen/dp10"
-                        android:text="Paytm" />
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp5"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp5">
 
-                    <CheckBox
-                        android:id="@+id/editPaytm"
-                        android:layout_width="@dimen/dp30"
-                        android:layout_height="@dimen/dp30"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="end|center_vertical"
-                        android:buttonTint="@color/colorPrimaryDark" />
-                </RelativeLayout>
+                        <View
+                            android:id="@+id/v1"
+                            android:layout_width="4dp"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@color/colorPrimaryDark" />
 
-                <TextView
-                    android:id="@+id/paytmTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp10"
-                    android:text="Kajal yadav"
-                    android:textColor="@color/Black"
-                    android:textSize="@dimen/sp16"
-                    android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv1Paytm"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start"
+                            android:layout_toLeftOf="@id/editPaytm"
+                            android:layout_toRightOf="@id/v1"
+                            android:gravity="start|center_vertical"
+                            android:padding="@dimen/dp10"
+                            android:text="Paytm" />
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:background="@color/btnback" />
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:paddingLeft="@dimen/dp10"
-                    android:paddingTop="@dimen/dp5"
-                    android:paddingRight="@dimen/dp10"
-                    android:paddingBottom="@dimen/dp5">
-
-                    <View
-                        android:id="@+id/v2"
-                        android:layout_width="4dp"
-                        android:layout_height="@dimen/dp20"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="@dimen/dp10"
-                        android:background="@color/colorPrimaryDark" />
+                        <CheckBox
+                            android:id="@+id/editPaytm"
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="end|center_vertical"
+                            android:buttonTint="@color/colorPrimaryDark" />
+                    </RelativeLayout>
 
                     <TextView
-                        android:id="@+id/tv2PhonePay"
-                        android:layout_width="match_parent"
+                        android:id="@+id/paytmTxt"
+                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="start"
-                        android:layout_toLeftOf="@id/editPhonePay"
-                        android:layout_toRightOf="@id/v2"
-                        android:gravity="start|center_vertical"
-                        android:padding="@dimen/dp10"
-                        android:text="PhonePe" />
-
-                    <CheckBox
-                        android:id="@+id/editPhonePay"
-                        android:layout_width="@dimen/dp30"
-
-                        android:layout_height="@dimen/dp30"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="end|center_vertical"
-                        android:buttonTint="@color/colorPrimaryDark" />
-                </RelativeLayout>
-
-                <TextView
-                    android:id="@+id/phPeName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:hint="Kajal yadav"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp5"
-                    android:textColor="@color/hint_text_color"
-                    android:textColorHint="@color/hint_text_color"
-                    android:textSize="@dimen/sp12"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/phonePeTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp10"
-                    android:text="7023864834"
-                    android:textColor="@color/Black"
-                    android:textSize="@dimen/sp16"
-                    android:textStyle="bold" />
-
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:background="@color/btnback" />
-
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:paddingLeft="@dimen/dp10"
-                    android:paddingTop="@dimen/dp5"
-                    android:paddingRight="@dimen/dp10"
-                    android:paddingBottom="@dimen/dp5">
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp10"
+                        android:text="Kajal yadav"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
 
                     <View
-                        android:id="@+id/v3"
-                        android:layout_width="4dp"
-                        android:layout_height="@dimen/dp20"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="@dimen/dp10"
-                        android:background="@color/colorPrimaryDark" />
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@color/btnback" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
-                    <TextView
-                        android:id="@+id/tv3Upi"
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/cvrPhonePe"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="start"
-                        android:layout_toLeftOf="@id/editUpi"
-                        android:layout_toRightOf="@id/v3"
-                        android:gravity="start|center_vertical"
-                        android:padding="@dimen/dp10"
-                        android:text="UPI" />
+                        android:layout_marginTop="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp5"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp5">
 
-                    <CheckBox
-                        android:id="@+id/editUpi"
-                        android:layout_width="@dimen/dp30"
+                        <View
+                            android:id="@+id/v2"
+                            android:layout_width="4dp"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@color/colorPrimaryDark" />
 
-                        android:layout_height="@dimen/dp30"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="end|center_vertical"
-                        android:buttonTint="@color/colorPrimaryDark" />
-                </RelativeLayout>
+                        <TextView
+                            android:id="@+id/tv2PhonePay"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start"
+                            android:layout_toLeftOf="@id/editPhonePay"
+                            android:layout_toRightOf="@id/v2"
+                            android:gravity="start|center_vertical"
+                            android:padding="@dimen/dp10"
+                            android:text="PhonePe" />
 
-                <TextView
-                    android:id="@+id/upiTxtName"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:hint="Kajal yadav"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp5"
-                    android:textColor="@color/Black"
-                    android:textColorHint="@color/hint_text_color"
-                    android:textSize="@dimen/sp12"
-                    android:textStyle="bold" />
+                        <CheckBox
+                            android:id="@+id/editPhonePay"
+                            android:layout_width="@dimen/dp30"
 
-                <TextView
-                    android:id="@+id/upiIdTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp10"
-                    android:text="7023864834@barodampay"
-                    android:textColor="@color/Black"
-                    android:textSize="@dimen/sp16"
-                    android:textStyle="bold" />
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="end|center_vertical"
+                            android:buttonTint="@color/colorPrimaryDark" />
+                    </RelativeLayout>
 
-                <View
-                    android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:background="@color/btnback" />
+                    <TextView
+                        android:id="@+id/phPeName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:hint="Kajal yadav"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:textColor="@color/hint_text_color"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/sp12"
+                        android:textStyle="bold" />
 
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:paddingLeft="@dimen/dp10"
-                    android:paddingTop="@dimen/dp5"
-                    android:paddingRight="@dimen/dp10"
-                    android:paddingBottom="@dimen/dp5">
+                    <TextView
+                        android:id="@+id/phonePeTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp10"
+                        android:text="7023864834"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
 
                     <View
-                        android:id="@+id/v4"
-                        android:layout_width="4dp"
-                        android:layout_height="@dimen/dp20"
-                        android:layout_centerVertical="true"
-                        android:layout_marginLeft="@dimen/dp10"
-                        android:background="@color/colorPrimaryDark" />
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@color/btnback" />
 
-                    <TextView
-                        android:id="@+id/tv4BankTransfer"
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:id="@+id/upiCvr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="start"
-                        android:layout_toLeftOf="@id/editBankDetails"
-                        android:layout_toRightOf="@id/v4"
-                        android:gravity="start|center_vertical"
-                        android:padding="@dimen/dp10"
-                        android:text="Bank Transfer (India)" />
+                        android:layout_marginTop="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp5"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp5">
 
-                    <CheckBox
-                        android:id="@+id/editBankDetails"
-                        android:layout_width="@dimen/dp30"
-                        android:layout_height="@dimen/dp30"
-                        android:layout_alignParentRight="true"
-                        android:layout_centerVertical="true"
-                        android:layout_gravity="end|center_vertical"
-                        android:buttonTint="@color/colorPrimaryDark" />
-                </RelativeLayout>
+                        <View
+                            android:id="@+id/v3"
+                            android:layout_width="4dp"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@color/colorPrimaryDark" />
 
-                <TextView
-                    android:id="@+id/account_holder_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:hint="Kajal yadav"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp5"
-                    android:textColor="@color/Black"
-                    android:textColorHint="@color/hint_text_color"
-                    android:textSize="@dimen/sp12"
-                    android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/tv3Upi"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start"
+                            android:layout_toLeftOf="@id/editUpi"
+                            android:layout_toRightOf="@id/v3"
+                            android:gravity="start|center_vertical"
+                            android:padding="@dimen/dp10"
+                            android:text="UPI" />
 
-                <TextView
-                    android:id="@+id/account_number"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp10"
-                    android:text="955910004567801"
-                    android:textColor="@color/Black"
-                    android:textSize="@dimen/sp16"
-                    android:textStyle="bold" />
+                        <CheckBox
+                            android:id="@+id/editUpi"
+                            android:layout_width="@dimen/dp30"
+
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="end|center_vertical"
+                            android:buttonTint="@color/colorPrimaryDark" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/upiTxtName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:hint="Kajal yadav"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/sp12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/upiIdTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp10"
+                        android:text="7023864834@barodampay"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@color/btnback" />
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
 
-                <TextView
-                    android:id="@+id/ifscTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:hint="BARB0K00KAS"
-                    android:paddingLeft="@dimen/dp5"
-                    android:paddingTop="@dimen/dp5"
-                    android:textColor="@color/Black"
-                    android:textColorHint="@color/hint_text_color"
-                    android:textSize="@dimen/sp12"
-                    android:textStyle="bold" />
-
-
-                <TextView
-                    android:id="@+id/accType"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:hint="current"
-                    android:paddingLeft="@dimen/dp5"
-                    android:textColor="@color/Black"
-                    android:textColorHint="@color/hint_text_color"
-                    android:textSize="@dimen/sp12" />
-
-                <TextView
-                    android:id="@+id/bankNameTxt"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="@dimen/dp16"
-                    android:hint="Bank Of Baroda"
-                    android:paddingLeft="@dimen/dp5"
-                    android:textColor="@color/Black"
-                    android:textColorHint="@color/hint_text_color"
-                    android:textSize="@dimen/sp12" />
-
-                <View
+                <androidx.appcompat.widget.LinearLayoutCompat
                     android:layout_width="match_parent"
-                    android:layout_height="1dp"
-                    android:layout_marginTop="@dimen/dp5"
-                    android:background="@color/btnback" />
+                    android:id="@+id/bankTransferCvr"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:paddingLeft="@dimen/dp10"
+                        android:paddingTop="@dimen/dp5"
+                        android:paddingRight="@dimen/dp10"
+                        android:paddingBottom="@dimen/dp5">
+
+                        <View
+                            android:id="@+id/v4"
+                            android:layout_width="4dp"
+                            android:layout_height="@dimen/dp20"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/dp10"
+                            android:background="@color/colorPrimaryDark" />
+
+                        <TextView
+                            android:id="@+id/tv4BankTransfer"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="start"
+                            android:layout_toLeftOf="@id/editBankDetails"
+                            android:layout_toRightOf="@id/v4"
+                            android:gravity="start|center_vertical"
+                            android:padding="@dimen/dp10"
+                            android:text="Bank Transfer (India)" />
+
+                        <CheckBox
+                            android:id="@+id/editBankDetails"
+                            android:layout_width="@dimen/dp30"
+                            android:layout_height="@dimen/dp30"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="end|center_vertical"
+                            android:buttonTint="@color/colorPrimaryDark" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/account_holder_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:hint="Kajal yadav"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/sp12"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/account_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp10"
+                        android:text="955910004567801"
+                        android:textColor="@color/Black"
+                        android:textSize="@dimen/sp16"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/ifscTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:hint="BARB0K00KAS"
+                        android:paddingLeft="@dimen/dp5"
+                        android:paddingTop="@dimen/dp5"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/sp12"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/accType"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:hint="current"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/sp12" />
+
+                    <TextView
+                        android:id="@+id/bankNameTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dp16"
+                        android:hint="Bank Of Baroda"
+                        android:paddingLeft="@dimen/dp5"
+                        android:textColor="@color/Black"
+                        android:textColorHint="@color/hint_text_color"
+                        android:textSize="@dimen/sp12" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginTop="@dimen/dp5"
+                        android:background="@color/btnback" />
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
 
                 <Button
                     android:id="@+id/doneBtn"

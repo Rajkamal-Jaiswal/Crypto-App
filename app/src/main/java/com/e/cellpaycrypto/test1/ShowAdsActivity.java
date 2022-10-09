@@ -2,6 +2,7 @@ package com.e.cellpaycrypto.test1;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -33,6 +34,8 @@ public class ShowAdsActivity extends AppCompatActivity {
     private Toolbar toolbar;
     private Context activity;
     private Gson gson = new Gson();
+    private SharedPreferences sharedpreferences;
+    private String user_id = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +43,9 @@ public class ShowAdsActivity extends AppCompatActivity {
         binding = ActivityShowAdsBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         activity = this;
+        sharedpreferences = getSharedPreferences(CommonUtils.MyPREFERENCES, Context.MODE_PRIVATE);
+        user_id = sharedpreferences.getString(CommonUtils.shared_USER_ID, "");
+
         recyclerView = binding.recyclerView;
         myToolbar();
         recyclerView.setHasFixedSize(true);

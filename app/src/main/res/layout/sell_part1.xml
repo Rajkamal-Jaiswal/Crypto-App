@@ -119,20 +119,40 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-
                 android:text="Asset"
                 android:textColor="@color/black"
                 android:textSize="@dimen/small_text_size" />
 
-            <EditText
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/btnAssetCvr"
                 android:layout_width="match_parent"
+                android:clickable="true"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp5"
-                android:background="@drawable/rect2"
-                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
-                android:hint="SPC"
-                android:padding="@dimen/dp10"
-                android:textColorHint="@color/hint_text_color" />
+                android:background="@drawable/rect2">
+
+                <TextView
+                    android:id="@+id/assetTypeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="SPC"
+
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_text_color" />
+
+                <ImageView
+                    android:id="@+id/btnAssets"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
         <androidx.appcompat.widget.LinearLayoutCompat
@@ -149,76 +169,104 @@
                 android:textColor="@color/black"
                 android:textSize="@dimen/small_text_size" />
 
-            <EditText
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:id="@+id/btnFiatCvr"
+                android:clickable="true"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/dp5"
-                android:background="@drawable/rect2"
-                android:drawableEnd="@drawable/ic_keyboard_arrow_down_black_24dp"
-                android:hint="INR"
-                android:padding="@dimen/dp10"
-                android:textColorHint="@color/hint_text_color" />
+                android:background="@drawable/rect2">
+
+                <TextView
+                    android:id="@+id/fiatTypeTxt"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:background="@color/transparent"
+                    android:hint="INR"
+                    android:padding="@dimen/dp10"
+                    android:textColor="@color/black"
+                    android:textColorHint="@color/hint_text_color" />
+
+                <ImageView
+                    android:id="@+id/btnFiat"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:clickable="true"
+                    android:padding="@dimen/dp10"
+                    android:src="@drawable/ic_keyboard_arrow_down_black_24dp" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
         </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="@dimen/dp10"
-        android:layout_marginTop="@dimen/dp24"
-        android:layout_marginRight="@dimen/dp10"
-        android:layout_marginBottom="@dimen/dp10"
-        android:alpha=".7"
-        android:text="Price Settings"
-        android:textColor="@color/black"
-        android:textSize="@dimen/small_text_size"
-        android:textStyle="bold" />
-
-    <View
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/dimen_1dp"
-        android:background="@color/btnback" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:text="Price Type"
-        android:textColor="@color/hint_text_color"
-        android:textSize="@dimen/small_text_size" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"
-        android:layout_margin="@dimen/dp10"
-        android:background="@drawable/stroke1"
-        android:weightSum="2">
+        android:orientation="vertical"
+        android:visibility="gone">
 
         <TextView
-            android:id="@+id/fixedBtn"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/dp2"
-            android:layout_weight="1"
-            android:background="@drawable/rect_1_white"
-            android:gravity="center"
-            android:padding="@dimen/dp10"
-            android:text="Fixed"
-            android:textColor="@color/black" />
+            android:layout_marginLeft="@dimen/dp10"
+            android:layout_marginTop="@dimen/dp24"
+            android:layout_marginRight="@dimen/dp10"
+            android:layout_marginBottom="@dimen/dp10"
+            android:alpha=".7"
+            android:text="Price Settings"
+            android:textColor="@color/black"
+            android:textSize="@dimen/small_text_size"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_1dp"
+            android:background="@color/btnback" />
+
 
         <TextView
-            android:id="@+id/floatingBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:text="Price Type"
+            android:textColor="@color/hint_text_color"
+            android:textSize="@dimen/small_text_size" />
+
+        <androidx.appcompat.widget.LinearLayoutCompat
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_margin="@dimen/dp2"
-            android:layout_weight="1"
-            android:gravity="center"
-            android:padding="@dimen/dp10"
-            android:text="Floating" />
+            android:layout_centerInParent="true"
+            android:layout_margin="@dimen/dp10"
+            android:background="@drawable/stroke1"
+            android:weightSum="2">
+
+            <TextView
+                android:id="@+id/fixedBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:background="@drawable/rect_1_white"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Fixed"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/floatingBtn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dp2"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:padding="@dimen/dp10"
+                android:text="Floating" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
     </androidx.appcompat.widget.LinearLayoutCompat>
 
     <EditText
@@ -291,7 +339,7 @@
         android:layout_marginStart="@dimen/dp10"
         android:layout_marginTop="10dp"
         android:scrollbarSize="@dimen/sp12"
-        android:text="Highest Order Price"
+        android:text="Lowest Order Price"
         android:textColor="@color/hint_text_color"
         android:textSize="@dimen/small_text_size" />
 

@@ -235,6 +235,18 @@
         <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/menu/bottom_menu_new.xml" value="0.1875" />
         <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/menu/bottom_menu_p2p.xml" value="0.1875" />
         <entry key="..\:/Rajkamal/SellPay New/CellpayCrypto(21_06_2022)/SellPay-master/app/src/main/res/xml/provider_paths.xml" value="0.1921875" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/drawable/rect2.xml" value="0.1" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/activity_deposit.xml" value="0.25" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/activity_sell_master.xml" value="0.25" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/activity_sell_part2.xml" value="0.25" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/activity_sell_part3.xml" value="0.33" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/activity_transfer.xml" value="0.18802083333333333" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/activity_withdrawal_request.xml" value="0.18802083333333333" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/coin_list_view.xml" value="0.18802083333333333" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/deposit_dialog.xml" value="0.25" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/select_payment_method_sell.xml" value="0.25" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/sell_part1.xml" value="0.2413793103448276" />
+        <entry key="..\:/VideoCrypt/Testttt/SellPay-App/app/src/main/res/layout/success_dialog_send.xml" value="0.25" />
       </map>
     </option>
   </component>

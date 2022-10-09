@@ -259,6 +259,7 @@
                         android:textSize="@dimen/small_text_size" />
 
                     <EditText
+                        android:id="@+id/termsTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_gravity="start"
@@ -291,6 +292,7 @@
                             android:layout_height="wrap_content"
                             android:layout_gravity="start"
                             android:layout_marginTop="@dimen/dp5"
+                            android:id="@+id/autoReplyTxt"
                             android:layout_weight="1"
                             android:background="@drawable/rect2"
                             android:gravity="start"

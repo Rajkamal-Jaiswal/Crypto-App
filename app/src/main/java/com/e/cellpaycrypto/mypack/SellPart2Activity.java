@@ -6,6 +6,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
 
@@ -20,9 +21,7 @@ import com.e.cellpaycrypto.Base.GlobalConstants;
 import com.e.cellpaycrypto.Base.Helper;
 import com.e.cellpaycrypto.Base.VolleySingleton;
 import com.e.cellpaycrypto.R;
-import com.e.cellpaycrypto.SelectPaymentMethodActivity;
 import com.e.cellpaycrypto.WebURLS;
-import com.e.cellpaycrypto.apimodels.ModelResponse;
 import com.e.cellpaycrypto.apimodels.showPaymentOptions.ModelPaymentShow;
 import com.e.cellpaycrypto.databinding.ActivitySellPart2Binding;
 import com.e.cellpaycrypto.databinding.SelectPaymentMethodSellBinding;
@@ -47,6 +46,7 @@ public class SellPart2Activity extends AppCompatActivity {
     private TextView toolbarTitleTV;
     private String userid;
     private SharedPreferences sharedpreferences;
+    private HashMap<String, String> hashMap;
 
     private ModelPaymentShow.Root modelPaymentOptionsShow;
 
@@ -56,6 +56,10 @@ public class SellPart2Activity extends AppCompatActivity {
         binding = ActivitySellPart2Binding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
         activity = SellPart2Activity.this;
+        Intent intent = getIntent();
+        hashMap = (HashMap<String, String>) intent.getSerializableExtra("map");
+
+
         sharedpreferences = getSharedPreferences(CommonUtils.MyPREFERENCES, Context.MODE_PRIVATE);
         userid = sharedpreferences.getString(CommonUtils.shared_USER_ID, "");
 
@@ -63,29 +67,87 @@ public class SellPart2Activity extends AppCompatActivity {
         toolbar = findViewById(R.id.main_toolbar);
         toolbarTitleTV = findViewById(R.id.toolbarTitleTV);
         myToolbar();
+
         binding.btnPrevious.setOnClickListener(v -> {
             onBackPressed();
         });
 
         binding.btnNext.setOnClickListener(v -> {
-            startActivity(new Intent(getApplicationContext(), SellPart3Activity.class));
+         /*   maxOrderLmt
+
+                    ttlAmtTxt
+            minOrderLmt
+                    */
+
+            if (TextUtils.isEmpty(binding.ttlAmtTxt.getText().toString().trim())) {
+                CommonUtils.showToast(activity, "Please enter amount");
+                binding.ttlAmtTxt.requestFocus();
+                return;
+            }
+            if (TextUtils.isEmpty(binding.minOrderLmt.getText().toString().trim())) {
+                CommonUtils.showToast(activity, "Please enter Minimum Order limit");
+                binding.minOrderLmt.requestFocus();
+                return;
+            }
+            if (TextUtils.isEmpty(binding.maxOrderLmt.getText().toString().trim())) {
+                CommonUtils.showToast(activity, "Please enter Maximum Order limit");
+                binding.maxOrderLmt.requestFocus();
+                return;
+            }
+            /*
+
+terms:this is terms
+auto_reply:this is auto reply
+*/
+            hashMap.put("total_amount", binding.ttlAmtTxt.getText().toString().trim());
+            hashMap.put("order_limit_min", binding.minOrderLmt.getText().toString().trim());
+            hashMap.put("order_limit_max", binding.maxOrderLmt.getText().toString().trim());
+            hashMap.put("payment_method", "paytm");
+            startActivity(new Intent(getApplicationContext(), SellPart3Activity.class).putExtra("map", hashMap));
         });
+
         binding.cvrSelectPaymethods.setOnClickListener(v -> {
             watchlist = new BottomSheetDialog(activity, R.style.videosheetDialogTheme);
             SelectPaymentMethodSellBinding binding;
             binding = SelectPaymentMethodSellBinding.inflate(getLayoutInflater());
             watchlist.setContentView(binding.getRoot());
+            if (!TextUtils.isEmpty(modelPaymentOptionsShow.getPaymentDeatil().getPaytm_no())) {
+                binding.paytmCvr.setVisibility(View.VISIBLE);
+                binding.paytmTxt.setText(modelPaymentOptionsShow.getPaymentDeatil().getPaytm_no());
+            } else {
+                binding.paytmCvr.setVisibility(View.GONE);
+            }
 
-            binding.paytmTxt.setText(modelPaymentOptionsShow.getPaymentDeatil().getPaytm_no());
-            binding.phonePeTxt.setText(modelPaymentOptionsShow.getPaymentDeatil().getPhonepe_no());
-            binding.upiIdTxt.setText(modelPaymentOptionsShow.getPaymentDeatil().getUpi_id());
-            binding.phPeName.setText(modelPaymentOptionsShow.getPaymentDeatil().getUpi_name());
-            binding.upiTxtName.setText(modelPaymentOptionsShow.getPaymentDeatil().getUpi_name());
-            binding.accountHolderName.setText(modelPaymentOptionsShow.getBankdata().getAccount_holder_name());
-            binding.accountNumber.setText(modelPaymentOptionsShow.getBankdata().getAccount_number());
-            binding.ifscTxt.setText("IFSC: "+modelPaymentOptionsShow.getBankdata().getIfsc_code());
-            binding.accType.setText("Account Type: "+modelPaymentOptionsShow.getBankdata().getAccount_type());
-            binding.bankNameTxt.setText("Bank Name: "+modelPaymentOptionsShow.getBankdata().getBank_name());
+            if (!TextUtils.isEmpty(modelPaymentOptionsShow.getPaymentDeatil().getPhonepe_no())) {
+                binding.cvrPhonePe.setVisibility(View.VISIBLE);
+                binding.phonePeTxt.setText(modelPaymentOptionsShow.getPaymentDeatil().getPhonepe_no());
+                binding.phPeName.setText(modelPaymentOptionsShow.getPaymentDeatil().getUpi_name());
+
+            } else {
+                binding.cvrPhonePe.setVisibility(View.GONE);
+            }
+
+            if (!TextUtils.isEmpty(modelPaymentOptionsShow.getPaymentDeatil().getUpi_id())) {
+                binding.upiCvr.setVisibility(View.VISIBLE);
+                binding.upiIdTxt.setText(modelPaymentOptionsShow.getPaymentDeatil().getUpi_id());
+                binding.upiTxtName.setText(modelPaymentOptionsShow.getPaymentDeatil().getUpi_name());
+
+            } else {
+                binding.upiCvr.setVisibility(View.GONE);
+            }
+            if (!TextUtils.isEmpty(modelPaymentOptionsShow.bankdata.getAccount_number())) {
+                binding.bankTransferCvr.setVisibility(View.VISIBLE);
+                binding.accountHolderName.setText(modelPaymentOptionsShow.getBankdata().getAccount_holder_name());
+                binding.accountNumber.setText(modelPaymentOptionsShow.getBankdata().getAccount_number());
+                binding.ifscTxt.setText("IFSC: " + modelPaymentOptionsShow.getBankdata().getIfsc_code());
+                binding.accType.setText("Account Type: " + modelPaymentOptionsShow.getBankdata().getAccount_type());
+                binding.bankNameTxt.setText("Bank Name: " + modelPaymentOptionsShow.getBankdata().getBank_name());
+
+            } else {
+                binding.bankTransferCvr.setVisibility(View.GONE);
+            }
+
+
 //            binding.branchName.setText(modelPaymentOptionsShow.getBankdata().getBranch_name());
             Objects.requireNonNull(watchlist.getWindow()).getAttributes().windowAnimations = R.style.PauseDialogAnimation;
             watchlist.setCancelable(false);

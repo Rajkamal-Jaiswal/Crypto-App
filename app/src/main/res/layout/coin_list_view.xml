@@ -46,7 +46,8 @@
             android:layout_toLeftOf="@id/v1"
             android:padding="@dimen/dp10"
             android:text="1525 Trades"
-            android:textColor="@color/hint_text_color" />
+            android:textColor="@color/hint_text_color"
+            android:visibility="gone" />
 
         <View
             android:id="@+id/v1"
@@ -58,7 +59,8 @@
             android:layout_marginRight="@dimen/dp4"
             android:layout_marginBottom="@dimen/dp10"
             android:layout_toLeftOf="@id/viewBtn"
-            android:background="@color/btnback" />
+            android:background="@color/btnback"
+            android:visibility="gone" />
 
         <TextView
             android:id="@+id/viewBtn"
@@ -68,7 +70,8 @@
             android:layout_centerVertical="true"
             android:padding="@dimen/dp10"
             android:src="@drawable/ic_baseline_arrow_forward_24"
-            android:text="90.18 %" />
+            android:text="90.18 %"
+            android:visibility="gone" />
 
     </RelativeLayout>
 
