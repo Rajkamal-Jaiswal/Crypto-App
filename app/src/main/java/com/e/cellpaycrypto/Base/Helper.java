@@ -2,6 +2,8 @@ package com.e.cellpaycrypto.Base;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.ClipData;
+import android.content.ClipboardManager;
 import android.content.Context;
 import android.graphics.Bitmap;
 import android.os.Build;
@@ -65,6 +67,13 @@ public class Helper {
         return result;
     }
 
+    public static void copyToClipBoard(Context context, String label, String selectedText) {
+        ClipboardManager clipboard = (ClipboardManager) context.getSystemService(Context.CLIPBOARD_SERVICE);
+        ClipData clip = ClipData.newPlainText(label, selectedText);
+        if (clipboard == null || clip == null) return;
+        clipboard.setPrimaryClip(clip);
+        Toast.makeText(context, label + " copied", Toast.LENGTH_SHORT).show();
+    }
     public static String encodeImage(Bitmap bm) {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bm.compress(Bitmap.CompressFormat.JPEG, 100, baos);

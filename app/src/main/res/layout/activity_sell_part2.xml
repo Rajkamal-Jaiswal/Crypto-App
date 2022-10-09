@@ -178,6 +178,7 @@
                         android:textSize="@dimen/small_text_size" />
 
                     <EditText
+                        android:id="@+id/ttlAmtTxt"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="@dimen/dp10"
@@ -203,6 +204,7 @@
                         android:weightSum="2">
 
                         <EditText
+                            android:id="@+id/minOrderLmt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginTop="@dimen/dp5"
@@ -220,6 +222,7 @@
                             android:textSize="@dimen/sp20" />
 
                         <EditText
+                            android:id="@+id/maxOrderLmt"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_marginLeft="@dimen/dp3"

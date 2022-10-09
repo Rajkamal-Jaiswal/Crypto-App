@@ -103,7 +103,7 @@
                                 android:gravity="center">
 
                                 <TextView
-                                    android:id="@+id/tv2"
+                                    android:id="@+id/upiIdTxt"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -114,7 +114,7 @@
                                     tools:ignore="HardcodedText" />
 
                                 <ImageView
-                                    android:id="@+id/copyBtn1"
+                                    android:id="@+id/copyBtnUpiId"
                                     android:layout_width="@dimen/dp24"
                                     android:layout_height="@dimen/dp24"
                                     android:layout_marginLeft="@dimen/dp16"
@@ -140,7 +140,7 @@
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/dp100"
+                    android:layout_height="@dimen/dp160"
                     android:paddingLeft="@dimen/dp10"
                     android:paddingRight="@dimen/dp10">
 
@@ -186,7 +186,7 @@
                                 android:gravity="center">
 
                                 <TextView
-                                    android:id="@+id/tv4"
+                                    android:id="@+id/bankNameTv"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -199,7 +199,7 @@
                                     tools:ignore="HardcodedText" />
 
                                 <ImageView
-                                    android:id="@+id/copyBtn3"
+                                    android:id="@+id/copyBtnBankName"
                                     android:layout_width="@dimen/dp24"
                                     android:layout_height="@dimen/dp24"
                                     android:layout_marginLeft="@dimen/dp16"
@@ -213,7 +213,7 @@
                                 android:layout_height="wrap_content">
 
                                 <TextView
-                                    android:id="@+id/tveruyu"
+                                    android:id="@+id/accNumberTxt"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_gravity="center_vertical"
@@ -224,7 +224,7 @@
                                     android:visibility="visible" />
 
                                 <ImageView
-                                    android:id="@+id/copyBtn"
+                                    android:id="@+id/copyBtnAccNumber"
                                     android:layout_width="@dimen/dp24"
                                     android:layout_height="@dimen/dp24"
                                     android:layout_marginStart="@dimen/dp16"
@@ -238,7 +238,7 @@
                                 android:layout_height="wrap_content">
 
                                 <TextView
-                                    android:id="@+id/regreg"
+                                    android:id="@+id/ifscCodeTxt"
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:layout_below="@id/tv1"
@@ -251,7 +251,65 @@
                                     android:visibility="visible" />
 
                                 <ImageView
-                                    android:id="@+id/egfreg"
+                                    android:id="@+id/copyBtnIfsc"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/branchNameTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tv1"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dp10"
+                                    android:layout_toRightOf="@id/im1"
+                                    android:padding="@dimen/dp2"
+                                    android:text="IFSC: BARBKOOKAS"
+                                    android:textSize="@dimen/sp13"
+                                    android:visibility="visible" />
+
+                                <ImageView
+                                    android:id="@+id/copyBtnBranchName"
+                                    android:layout_width="@dimen/dp24"
+                                    android:layout_height="@dimen/dp24"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="@dimen/dp16"
+                                    android:padding="@dimen/dp4"
+                                    android:src="@drawable/ic_baseline_copy_all_24"
+                                    app:tint="@color/colorPrimary" />
+                            </TableRow>
+
+                            <TableRow
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content">
+
+                                <TextView
+                                    android:id="@+id/accHolderNameTxt"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@id/tv1"
+                                    android:layout_gravity="center_vertical"
+                                    android:layout_marginLeft="@dimen/dp10"
+                                    android:layout_toRightOf="@id/im1"
+                                    android:padding="@dimen/dp2"
+                                    android:text="IFSC: BARBKOOKAS"
+                                    android:textSize="@dimen/sp13"
+                                    android:visibility="visible" />
+
+                                <ImageView
+                                    android:id="@+id/copyBtnHolderName"
                                     android:layout_width="@dimen/dp24"
                                     android:layout_height="@dimen/dp24"
                                     android:layout_alignParentRight="true"
@@ -323,7 +381,7 @@
 
 
         <CheckBox
-
+            android:id="@+id/payConfirmation"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@id/cvr1"
